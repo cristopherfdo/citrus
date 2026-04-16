@@ -291,16 +291,16 @@ a { text-decoration: none; }
 
 /* ── SYMPTOMS ── */
 .symptoms { padding: 88px 24px; background: var(--cream); }
-.symptoms-grid { display: grid; gap: 14px; }
-@media(min-width:600px){ .symptoms-grid { grid-template-columns: repeat(2,1fr); } }
+.symptoms-grid { display: grid; gap: 12px; }
+@media(min-width:480px){ .symptoms-grid { grid-template-columns: repeat(2,1fr); } }
 
 .symptom {
-  display: flex; align-items: flex-start; gap: 16px;
+  display: flex; align-items: flex-start; gap: 14px;
   background: var(--white);
   border: 1px solid var(--border);
   border-left: 4px solid var(--orange);
   border-radius: 14px;
-  padding: 22px 24px;
+  padding: 16px 18px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.04);
   transition: box-shadow 0.2s, transform 0.2s;
   opacity: 0; transform: translateY(14px);
@@ -363,13 +363,14 @@ a { text-decoration: none; }
 
 /* ── BENEFITS ── */
 .benefits { padding: 88px 24px; background: var(--white); }
-.benefits-grid { display: grid; gap: 16px; }
-@media(min-width:540px){ .benefits-grid { grid-template-columns: repeat(2,1fr); } }
-.benefit-card { background: var(--cream); border: 1px solid var(--border); border-radius: 18px; padding: 28px; transition: box-shadow 0.2s, transform 0.2s; }
+.benefits-grid { display: grid; gap: 14px; }
+@media(min-width:480px){ .benefits-grid { grid-template-columns: repeat(2,1fr); } }
+.benefit-card { background: var(--cream); border: 1px solid var(--border); border-radius: 16px; padding: 20px; transition: box-shadow 0.2s, transform 0.2s; }
 .benefit-card:hover { box-shadow: 0 8px 32px rgba(232,80,10,0.1); transform: translateY(-3px); border-color: rgba(232,80,10,0.15); }
-.benefit-card .emoji { font-size: 30px; margin-bottom: 14px; display: block; }
-.benefit-card h4 { font-size: 16px; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
-.benefit-card p { font-size: 14px; color: var(--text2); line-height: 1.65; margin: 0; }
+.benefit-card .card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.benefit-card .emoji { font-size: 22px; flex-shrink: 0; }
+.benefit-card h4 { font-size: 14px; font-weight: 700; color: var(--dark); margin: 0; line-height: 1.3; }
+.benefit-card p { font-size: 13px; color: var(--text2); line-height: 1.55; margin: 0; }
 
 /* ── TESTIMONIALS ── */
 .testimonials { padding: 88px 24px; background: var(--cream2); }
@@ -637,33 +638,27 @@ footer { background: var(--dark); padding: 52px 24px; text-align: center; }
     <p class="section-intro">Here's what users report within the first weeks:</p>
     <div class="benefits-grid">
       <div class="benefit-card">
-        <span class="emoji">🔥</span>
-        <h4>My body finally burns fat — even at rest</h4>
+        <div class="card-header"><span class="emoji">🔥</span><h4>My body finally burns fat — even at rest</h4></div>
         <p>Stored fat becomes the primary fuel source, even between meals and during sleep.</p>
       </div>
       <div class="benefit-card">
-        <span class="emoji">⚡</span>
-        <h4>I have real energy all day — without caffeine</h4>
+        <div class="card-header"><span class="emoji">⚡</span><h4>I have real energy all day — without caffeine</h4></div>
         <p>No more 3pm crashes. Clean, steady energy that lasts from morning to night.</p>
       </div>
       <div class="benefit-card">
-        <span class="emoji">🧠</span>
-        <h4>My focus and clarity came back</h4>
+        <div class="card-header"><span class="emoji">🧠</span><h4>My focus and clarity came back</h4></div>
         <p>When metabolism is balanced, the brain gets the fuel it needs — mental fog lifts naturally.</p>
       </div>
       <div class="benefit-card">
-        <span class="emoji">🩺</span>
-        <h4>My cravings dropped dramatically</h4>
+        <div class="card-header"><span class="emoji">🩺</span><h4>My cravings dropped dramatically</h4></div>
         <p>As blood sugar stabilizes, the urge for sugar and carbs fades — finally.</p>
       </div>
       <div class="benefit-card">
-        <span class="emoji">🌙</span>
-        <h4>I burn fat while I sleep</h4>
+        <div class="card-header"><span class="emoji">🌙</span><h4>I burn fat while I sleep</h4></div>
         <p>Thermogenesis doesn't stop at night — CitrusBurn supports metabolic rate around the clock.</p>
       </div>
       <div class="benefit-card">
-        <span class="emoji">💪</span>
-        <h4>No jitters. No racing heart. No dependency.</h4>
+        <div class="card-header"><span class="emoji">💪</span><h4>No jitters. No racing heart. No dependency.</h4></div>
         <p>Pure botanicals working with my body. No stimulants. No synthetic chemicals.</p>
       </div>
     </div>
