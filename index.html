@@ -3,974 +3,827 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wake Up Slimmer: Ignite Your Metabolism with CitrusBurn™</title>
-  <!-- Meta Pixel Code -->
+<title>Why Can't I Lose Weight No Matter What I Do? — CitrusBurn™</title>
+<!-- Meta Pixel -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2145608612901233');
-fbq('track', 'PageView');
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2145608612901233');
+fbq('track','PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2145608612901233&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2145608612901233&ev=PageView&noscript=1"/></noscript>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,600;0,700;1,500;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --orange: #E8650A;
-  --orange-dark: #C04A00;
-  --orange-light: #FF7C1F;
-  --orange-glow: rgba(232,101,10,0.15);
-  --dark: #0E0E0E;
-  --dark2: #1A1A1A;
-  --dark3: #242424;
+  --orange: #E8500A;
+  --orange-dark: #B83D00;
+  --orange-light: #FF6B1A;
+  --orange-pale: #FFF0E8;
+  --orange-pale2: #FFE4D0;
+  --cream: #FAFAF8;
+  --cream2: #F5F0EA;
   --white: #FFFFFF;
-  --off-white: #F5F0EB;
-  --gray: #9A9A9A;
-  --light-gray: #E8E0D8;
-  --yellow: #F5C518;
-  --green-check: #2ECC71;
+  --dark: #1A0F08;
+  --text: #2D1F14;
+  --text2: #6B5A4E;
+  --border: rgba(0,0,0,0.08);
 }
 
 html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text); overflow-x: hidden; padding-bottom: 76px; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+a { text-decoration: none; }
 
-body {
-  background: var(--dark);
-  color: var(--white);
-  font-family: 'Barlow', sans-serif;
-  font-size: 17px;
-  line-height: 1.7;
-  overflow-x: hidden;
-}
-
-/* ─── FLASH BANNER ─── */
-.flash-banner {
-  background: linear-gradient(90deg, var(--orange-dark), var(--orange), var(--orange-dark));
-  background-size: 200% 100%;
-  animation: shimmer 3s linear infinite;
+/* ── TOPBAR ── */
+.topbar {
+  background: linear-gradient(90deg, #B83D00 0%, #E8500A 30%, #FF6B1A 50%, #E8500A 70%, #B83D00 100%);
+  color: #fff;
   text-align: center;
   padding: 12px 20px;
-  font-family: 'Barlow', sans-serif;
-  font-weight: 800;
-  font-size: 14px;
-  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-}
-@keyframes shimmer {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
+  position: relative;
+  box-shadow: 0 2px 12px rgba(232,80,10,0.3);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
-/* ─── NAV ─── */
-nav {
-  background: #111;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-  padding: 16px 24px;
+/* ── NAV ── */
+.nav {
+  background: var(--white);
+  padding: 16px 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
-  z-index: 90;
+  z-index: 200;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.06);
 }
-.nav-logo {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 28px;
-  letter-spacing: 3px;
-  color: var(--white);
-}
-.nav-logo span { color: var(--orange); }
-.nav-links {
-  display: flex;
-  gap: 28px;
-  list-style: none;
-}
-.nav-links a {
-  color: var(--gray);
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: color 0.2s;
-}
+.nav-brand { font-family: 'Bebas Neue', sans-serif; font-size: 26px; letter-spacing: 0.04em; color: var(--dark); line-height: 1; }
+.nav-brand .burn { color: var(--orange); }
+.nav-links { display: flex; gap: 28px; list-style: none; flex-wrap: wrap; }
+.nav-links a { color: var(--text2); font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; transition: color 0.2s; }
 .nav-links a:hover { color: var(--orange); }
-.nav-cta {
-  background: var(--orange);
-  color: var(--white) !important;
-  padding: 10px 22px;
-  border-radius: 4px;
-  font-weight: 700 !important;
-}
-.nav-cta:hover { background: var(--orange-light) !important; color: var(--white) !important; }
-@media(max-width:600px){
-  .nav-links { display: none; }
-}
+.nav-cta { background: var(--orange); color: white; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 11px 22px; border-radius: 6px; white-space: nowrap; box-shadow: 0 4px 14px rgba(232,80,10,0.3); transition: background 0.2s, transform 0.2s; }
+.nav-cta:hover { background: var(--orange-dark); transform: translateY(-1px); }
 
-/* ─── WRAPPER ─── */
-.wrapper { max-width: 900px; margin: 0 auto; padding: 0 20px; }
-
-/* ─── HERO ─── */
+/* ── HERO ── */
 .hero {
-  padding: 60px 20px 50px;
+  background: var(--white);
+  padding: 80px 24px 0;
   text-align: center;
-  background: radial-gradient(ellipse at top, rgba(232,101,10,0.12) 0%, transparent 65%);
+  position: relative;
+  overflow: hidden;
 }
-.hero-offer {
-  display: inline-block;
-  background: rgba(232,101,10,0.15);
-  border: 1px solid var(--orange);
-  color: var(--orange);
+.hero::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 200px;
+  background: linear-gradient(to bottom, transparent, var(--cream));
+}
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--orange-pale);
+  border: 1.5px solid var(--orange-pale2);
+  color: var(--orange-dark);
   font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 3px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  padding: 7px 20px;
+  padding: 8px 20px;
   border-radius: 100px;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
+  position: relative;
 }
 .hero h1 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(48px, 9vw, 88px);
-  line-height: 1.0;
-  letter-spacing: 2px;
-  color: var(--white);
-  margin-bottom: 6px;
+  font-size: clamp(52px, 10vw, 92px);
+  color: var(--dark);
+  line-height: 0.93;
+  letter-spacing: 0.02em;
+  max-width: 780px;
+  margin: 0 auto 24px;
+  position: relative;
 }
-.hero h1 .orange { color: var(--orange); }
+.hero h1 .accent { color: var(--orange); display: block; }
 .hero-sub {
+  font-family: 'Lora', serif;
   font-size: clamp(17px, 2.5vw, 21px);
-  color: var(--off-white);
-  max-width: 680px;
-  margin: 20px auto 0;
-  font-weight: 400;
-  line-height: 1.65;
-}
-
-/* PRODUCT IMAGE */
-.product-img-wrap {
-  margin: 40px auto;
-  max-width: 340px;
-  position: relative;
-}
-.product-img-wrap img {
-  width: 100%;
-  border-radius: 12px;
-  filter: drop-shadow(0 20px 60px rgba(232,101,10,0.4));
-}
-.img-badge {
-  position: absolute;
-  top: -12px;
-  right: -12px;
-  background: var(--orange);
-  color: white;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 13px;
-  letter-spacing: 2px;
-  padding: 8px 14px;
-  border-radius: 4px;
-  text-transform: uppercase;
-}
-
-.hero-btns {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  margin-top: 36px;
-}
-
-/* ─── BUTTONS ─── */
-.btn-primary {
-  display: inline-block;
-  background: linear-gradient(135deg, var(--orange) 0%, var(--orange-dark) 100%);
-  color: white;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(20px, 3vw, 26px);
-  letter-spacing: 2px;
-  padding: 20px 50px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: all 0.2s;
-  box-shadow: 0 6px 30px rgba(232,101,10,0.45);
-  text-transform: uppercase;
-  position: relative;
-  overflow: hidden;
-}
-.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(232,101,10,0.6); }
-
-.btn-secondary {
-  display: inline-block;
-  border: 1px solid var(--orange);
-  color: var(--orange);
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  padding: 12px 28px;
-  text-decoration: none;
-  border-radius: 4px;
-  text-transform: uppercase;
-  transition: all 0.2s;
-}
-.btn-secondary:hover { background: var(--orange); color: white; }
-
-.btn-sub {
-  font-size: 12px;
-  color: var(--gray);
-  margin-top: 8px;
-}
-.btn-sub span { color: var(--orange); }
-
-/* ─── SECTION TITLES ─── */
-.section { padding: 70px 0; }
-.section-tag {
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: var(--orange);
-  margin-bottom: 14px;
-}
-.section-title {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(32px, 5vw, 52px);
-  line-height: 1.1;
-  letter-spacing: 1px;
-  color: var(--white);
-  margin-bottom: 18px;
-}
-.section-title span { color: var(--orange); }
-
-/* ─── TRUST BADGES ─── */
-.trust-section {
-  background: var(--dark2);
-  border-top: 1px solid rgba(255,255,255,0.06);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-  padding: 50px 20px;
-}
-.trust-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-.trust-item { text-align: center; }
-.trust-item h4 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 16px;
-  letter-spacing: 1px;
-  color: var(--off-white);
-  margin-bottom: 6px;
-}
-.trust-item p { font-size: 13px; color: var(--gray); line-height: 1.5; }
-@media(max-width:580px){ .trust-grid { grid-template-columns: repeat(2,1fr); } }
-
-/* ─── TRUST SVG ICONS ─── */
-.trust-svg {
-  width: 120px;
-  height: 120px;
-  margin: 0 auto 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.trust-svg img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  filter: drop-shadow(0 4px 12px rgba(232,101,10,0.2));
-  transition: transform 0.2s;
-}
-.trust-item:hover .trust-svg img { transform: scale(1.05); }
-
-/* ─── TESTIMONIAL AVATARS ─── */
-.testi-avatar {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 28px;
-  color: white;
-  margin-bottom: 14px;
-  border: 2px solid var(--orange);
-  flex-shrink: 0;
-}
-.testi-avatar-f  { background: linear-gradient(135deg, #E8650A, #C04A00); }
-.testi-avatar-m  { background: linear-gradient(135deg, #1E6FD9, #0D4FA0); }
-.testi-avatar-f2 { background: linear-gradient(135deg, #9B30C0, #6A1F8A); }
-
-/* ─── GUARANTEE SEAL ─── */
-.guarantee-seal {
-  display: flex;
-  align-items: center;
-  gap: 36px;
-  background: rgba(232,101,10,0.06);
-  border: 1px solid rgba(232,101,10,0.25);
-  border-radius: 12px;
-  padding: 36px;
-  margin-top: 56px;
-}
-.seal-img-wrap {
-  width: 160px;
-  flex-shrink: 0;
-}
-.seal-img-wrap img {
-  width: 100%;
-  filter: drop-shadow(0 8px 24px rgba(232,101,10,0.35));
-  transition: transform 0.2s;
-}
-.seal-img-wrap img:hover { transform: scale(1.03); }
-.seal-text h4 { font-family: 'Bebas Neue', sans-serif; font-size: 26px; letter-spacing: 1px; color: var(--white); margin-bottom: 12px; }
-.seal-text p { font-size: 15px; color: var(--gray); line-height: 1.7; margin: 0; }
-@media(max-width:580px){
-  .guarantee-seal { flex-direction: column; text-align: center; }
-  .seal-img-wrap { width: 130px; margin: 0 auto; }
-}
-
-/* ─── TESTIMONIALS ─── */
-.testi-section { background: var(--dark); padding: 70px 20px; }
-.testi-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-top: 44px;
-}
-.testi-card {
-  background: var(--dark2);
-  border: 1px solid rgba(255,255,255,0.07);
-  border-radius: 8px;
-  padding: 28px;
-  position: relative;
-  transition: border-color 0.2s;
-}
-.testi-card:hover { border-color: var(--orange); }
-.testi-card::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 3px;
-  background: var(--orange);
-  border-radius: 8px 8px 0 0;
-}
-.testi-img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 14px;
-  border: 2px solid var(--orange);
-}
-.testi-verified {
-  display: inline-block;
-  background: rgba(46,204,113,0.12);
-  border: 1px solid var(--green-check);
-  color: var(--green-check);
-  font-size: 11px;
-  font-weight: 700;
-  padding: 3px 10px;
-  border-radius: 100px;
-  margin-bottom: 14px;
-  letter-spacing: 0.5px;
-}
-.testi-stars { color: var(--yellow); font-size: 18px; letter-spacing: 2px; margin-bottom: 12px; }
-.testi-text { font-size: 15px; color: var(--off-white); font-style: italic; line-height: 1.7; margin-bottom: 16px; }
-.testi-name { font-weight: 800; font-size: 14px; color: var(--orange); }
-@media(max-width:700px){ .testi-grid { grid-template-columns: 1fr; } }
-
-/* ─── FLASH SALE BOX ─── */
-.flash-box {
-  background: linear-gradient(135deg, var(--dark2) 0%, var(--dark3) 100%);
-  border: 2px solid var(--orange);
-  border-radius: 10px;
-  padding: 44px 36px;
-  text-align: center;
-  margin: 44px 0;
-  position: relative;
-  overflow: hidden;
-}
-.flash-box::before {
-  content: '';
-  position: absolute;
-  top: -80px; right: -80px;
-  width: 250px; height: 250px;
-  background: radial-gradient(circle, rgba(232,101,10,0.15) 0%, transparent 70%);
-}
-.flash-box .flash-label {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 13px;
-  letter-spacing: 5px;
-  color: var(--orange);
-  margin-bottom: 10px;
-  display: block;
-}
-.flash-box h2 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(28px, 5vw, 48px);
-  line-height: 1.1;
-  margin-bottom: 8px;
-  letter-spacing: 1px;
-}
-.flash-box p { color: var(--gray); font-size: 15px; margin-bottom: 28px; }
-.flash-box img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 8px;
-  margin-bottom: 28px;
-}
-.urgency-text {
-  background: rgba(232,101,10,0.1);
-  border: 1px solid rgba(232,101,10,0.3);
-  border-radius: 6px;
-  padding: 14px 20px;
-  font-size: 14px;
-  font-weight: 700;
-  color: #FF8A5B;
-  margin: 20px 0;
-  letter-spacing: 0.5px;
-}
-
-/* ─── GUARANTEE ─── */
-.guarantee-section { background: var(--dark2); padding: 70px 20px; }
-.guarantee-inner {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 40px;
-  align-items: center;
-  max-width: 800px;
-  margin: 0 auto;
-}
-.guarantee-inner img {
-  width: 160px;
-  filter: drop-shadow(0 8px 20px rgba(232,101,10,0.3));
-}
-.guarantee-inner h2 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(28px, 4vw, 44px);
-  letter-spacing: 1px;
-  margin-bottom: 14px;
-}
-.guarantee-inner p { color: var(--off-white); font-size: 16px; line-height: 1.7; margin-bottom: 16px; }
-@media(max-width:580px){
-  .guarantee-inner { grid-template-columns: 1fr; text-align: center; }
-  .guarantee-inner img { margin: 0 auto; }
-}
-
-/* ─── HOW IT WORKS ─── */
-.how-section { padding: 70px 20px; }
-.how-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
-}
-.how-inner img { width: 100%; border-radius: 10px; filter: drop-shadow(0 16px 40px rgba(232,101,10,0.25)); }
-.benefits-list { list-style: none; padding: 0; margin-top: 24px; }
-.benefits-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  padding: 14px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-  font-size: 16px;
-  color: var(--off-white);
-}
-.benefits-list li:last-child { border-bottom: none; }
-.check {
-  width: 24px; height: 24px;
-  background: var(--orange);
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 12px; font-weight: 700;
-  flex-shrink: 0; margin-top: 2px;
-}
-.benefits-list li strong { color: var(--white); display: block; margin-bottom: 2px; font-size: 15px; font-weight: 800; }
-@media(max-width:640px){ .how-inner { grid-template-columns: 1fr; } }
-
-/* ─── INGREDIENTS ─── */
-.ingredients-section { background: var(--dark2); padding: 70px 20px; }
-.ingredients-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-top: 40px;
-}
-.ingredient-card {
-  background: var(--dark3);
-  border: 1px solid rgba(255,255,255,0.07);
-  border-radius: 8px;
-  padding: 24px 20px;
-  transition: border-color 0.2s, transform 0.2s;
-}
-.ingredient-card:hover { border-color: var(--orange); transform: translateY(-3px); }
-.ingredient-num {
-  width: 36px; height: 36px;
-  background: var(--orange);
-  color: white;
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 18px;
-  margin-bottom: 14px;
-}
-.ingredient-card h4 {
-  font-weight: 800;
-  font-size: 15px;
-  color: var(--white);
-  margin-bottom: 8px;
-}
-.ingredient-card p { font-size: 13px; color: var(--gray); line-height: 1.6; }
-@media(max-width:600px){ .ingredients-grid { grid-template-columns: 1fr; } }
-
-/* ─── BONUSES ─── */
-.bonus-section { padding: 70px 20px; }
-.bonus-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 40px; }
-.bonus-card {
-  background: var(--dark2);
-  border: 1px solid rgba(232,101,10,0.25);
-  border-radius: 10px;
-  padding: 28px;
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-  transition: border-color 0.2s;
-}
-.bonus-card:hover { border-color: var(--orange); }
-.bonus-card img { width: 90px; height: 90px; object-fit: cover; border-radius: 6px; flex-shrink: 0; }
-.bonus-card h4 { font-weight: 800; font-size: 15px; color: var(--orange); margin-bottom: 6px; }
-.bonus-card .original { font-size: 13px; color: var(--gray); text-decoration: line-through; margin-bottom: 4px; }
-.bonus-card .free { font-size: 13px; font-weight: 700; color: var(--green-check); margin-bottom: 8px; }
-.bonus-card p { font-size: 13px; color: var(--gray); line-height: 1.6; }
-@media(max-width:600px){ .bonus-grid { grid-template-columns: 1fr; } .bonus-card { flex-direction: column; } }
-
-/* ─── FAQ ─── */
-.faq-section { background: var(--dark2); padding: 70px 20px; }
-.faq-list { margin-top: 36px; }
-.faq-item {
-  border-bottom: 1px solid rgba(255,255,255,0.07);
-  padding: 20px 0;
-}
-.faq-q {
-  font-weight: 700;
-  font-size: 16px;
-  color: var(--white);
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-}
-.faq-q::after {
-  content: '+';
-  color: var(--orange);
-  font-size: 22px;
-  flex-shrink: 0;
-  transition: transform 0.2s;
-}
-.faq-item.open .faq-q::after { transform: rotate(45deg); }
-.faq-a {
-  font-size: 15px;
-  color: var(--gray);
+  font-style: italic;
+  color: var(--text2);
+  max-width: 780px;
+  margin: 0 auto 0;
   line-height: 1.7;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s;
+  position: relative;
+  font-weight: 400;
 }
-.faq-item.open .faq-a { max-height: 200px; padding-top: 12px; }
+.hero-sub strong { font-style: normal; font-weight: 700; color: var(--dark); }
 
-/* ─── FINAL CTA ─── */
-.final-cta { padding: 70px 20px; text-align: center; background: radial-gradient(ellipse at center, rgba(232,101,10,0.1) 0%, transparent 70%); }
-.final-cta img { width: 100%; max-width: 560px; border-radius: 8px; margin-bottom: 32px; }
-.price-badge {
-  display: inline-flex;
+/* Hero product split layout */
+.hero-body {
+  display: flex;
   align-items: center;
-  gap: 14px;
-  background: var(--dark2);
-  border: 1px solid var(--orange);
-  border-radius: 100px;
-  padding: 10px 24px;
-  margin-bottom: 28px;
+  justify-content: center;
+  gap: 48px;
+  max-width: 860px;
+  margin: 48px auto 0;
+  text-align: left;
+  flex-wrap: wrap;
+  position: relative;
 }
-.old-price { font-size: 18px; color: var(--gray); text-decoration: line-through; }
-.new-price { font-family: 'Bebas Neue', sans-serif; font-size: 32px; color: var(--orange); letter-spacing: 1px; }
-.discount-tag { background: var(--orange); color: white; font-size: 12px; font-weight: 800; padding: 4px 10px; border-radius: 100px; letter-spacing: 1px; }
-
-/* ─── SECURE PAYMENT ─── */
-.secure-section { background: var(--dark2); padding: 60px 20px; }
-.secure-section img { width: 100%; max-width: 500px; border-radius: 8px; margin: 28px auto; display: block; }
-.secure-section h3 { font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: 1px; margin-bottom: 14px; text-align: center; }
-.secure-section p { color: var(--gray); text-align: center; font-size: 15px; max-width: 600px; margin: 0 auto 16px; }
-
-/* ─── FOOTER ─── */
-footer {
-  background: #080808;
-  border-top: 1px solid rgba(255,255,255,0.06);
-  padding: 40px 20px;
-  text-align: center;
+.hero-product-wrap {
+  flex: 0 0 auto;
+  position: relative;
 }
-.footer-logo {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 24px;
-  letter-spacing: 3px;
+.hero-product {
+  width: 280px;
+  display: block;
+  position: relative;
+  z-index: 2;
+  animation: float 4s ease-in-out infinite;
+  filter: drop-shadow(0 24px 48px rgba(232,80,10,0.2)) drop-shadow(0 8px 24px rgba(0,0,0,0.12));
+}
+.hero-product-glow {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(ellipse, rgba(232,80,10,0.15) 0%, transparent 70%);
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.hero-cta-col {
+  flex: 1;
+  min-width: 260px;
+  max-width: 380px;
+}
+.hero-cta-col .price-preview {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 20px;
 }
-.footer-logo span { color: var(--orange); }
-.footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 20px; }
-.footer-links a { color: var(--gray); font-size: 13px; text-decoration: none; transition: color 0.2s; }
-.footer-links a:hover { color: var(--orange); }
-.footer-disclaimer { font-size: 11px; color: rgba(154,154,154,0.5); max-width: 800px; margin: 0 auto; line-height: 1.7; }
+.hero-cta-col .price-preview .was { font-size: 16px; color: #AAA; text-decoration: line-through; }
+.hero-cta-col .price-preview .now { font-family: 'Bebas Neue', sans-serif; font-size: 48px; color: var(--orange); line-height: 1; }
+.hero-cta-col .price-preview .pct { background: #DCFCE7; color: #15803D; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 100px; }
+.hero-cta-col .per-bottle { font-size: 12px; color: var(--text2); margin-bottom: 24px; }
 
-/* ─── FLOATING BAR ─── */
-.floating-bar {
-  position: fixed;
-  bottom: 0; left: 0; right: 0;
-  background: #111;
-  border-top: 2px solid var(--orange);
-  padding: 14px 24px;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  animation: slideUp 0.4s ease 3s both;
-}
-@keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
-.floating-bar-text strong { display: block; font-family: 'Bebas Neue', sans-serif; font-size: 18px; letter-spacing: 1px; color: var(--orange); }
-.floating-bar-text span { font-size: 12px; color: var(--gray); }
-.floating-bar-btn {
-  background: var(--orange);
+.btn-main {
+  display: block;
+  width: 100%;
+  background: linear-gradient(135deg, var(--orange-light), var(--orange-dark));
   color: white;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 16px;
-  letter-spacing: 2px;
-  padding: 13px 28px;
-  text-decoration: none;
-  border-radius: 4px;
-  white-space: nowrap;
-  flex-shrink: 0;
-  transition: background 0.2s;
-  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 20px 32px;
+  border-radius: 10px;
+  box-shadow: 0 8px 28px rgba(232,80,10,0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-bottom: 12px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  cursor: pointer;
+  text-align: center;
 }
-.floating-bar-btn:hover { background: var(--orange-light); }
-@media(max-width:500px){ .floating-bar-text { display: none; } }
+.btn-main::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,255,255,0.12) 0%, transparent 50%); pointer-events: none; }
+.btn-main:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(232,80,10,0.5); }
+
+.btn-outline {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: 1.5px solid rgba(0,0,0,0.15);
+  color: var(--text2);
+  font-size: 15px;
+  font-weight: 500;
+  padding: 14px 32px;
+  border-radius: 10px;
+  transition: border-color 0.2s, color 0.2s;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  text-align: center;
+}
+.btn-outline:hover { border-color: var(--orange); color: var(--orange); }
+
+.hero-mini-trust {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.trust-row { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text2); font-weight: 500; }
+.trust-row span { font-size: 14px; }
+
+/* Hero wave bottom */
+.hero-wave {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin-top: 48px;
+}
+.hero-wave svg { display: block; width: 100%; }
+
+/* ── BADGES ── */
+.badges { background: var(--cream2); padding: 48px 24px; }
+.badges-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; max-width: 720px; margin: 0 auto; }
+@media(min-width:500px){ .badges-grid { grid-template-columns: repeat(4,1fr); } }
+.badge-card { background: var(--white); border-radius: 16px; padding: 24px 16px; text-align: center; box-shadow: 0 2px 16px rgba(0,0,0,0.05); border: 1px solid var(--border); transition: box-shadow 0.2s, transform 0.2s; }
+.badge-card:hover { box-shadow: 0 8px 32px rgba(232,80,10,0.1); transform: translateY(-2px); }
+.badge-card img { width: 70px; height: 70px; object-fit: contain; margin-bottom: 12px; }
+.badge-card h4 { font-size: 13px; font-weight: 700; margin-bottom: 5px; color: var(--dark); }
+.badge-card p { font-size: 11px; color: var(--text2); line-height: 1.4; margin: 0; }
+
+/* ── SECTION SHARED ── */
+.section-tag { font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--orange); margin-bottom: 12px; }
+.section-h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(48px, 9vw, 80px); letter-spacing: 0.02em; line-height: 0.95; margin-bottom: 16px; color: var(--dark); }
+.section-h2 span { color: var(--orange); }
+.section-intro { font-size: 17px; color: var(--text2); line-height: 1.75; margin-bottom: 44px; max-width: 600px; }
+
+/* ── SYMPTOMS ── */
+.symptoms { padding: 88px 24px; background: var(--cream); }
+.symptoms-grid { display: grid; gap: 14px; }
+@media(min-width:600px){ .symptoms-grid { grid-template-columns: repeat(2,1fr); } }
+
+.symptom {
+  display: flex; align-items: flex-start; gap: 16px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--orange);
+  border-radius: 14px;
+  padding: 22px 24px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  transition: box-shadow 0.2s, transform 0.2s;
+  opacity: 0; transform: translateY(14px);
+  animation: fadeUp 0.5s ease forwards;
+}
+.symptom:hover { box-shadow: 0 8px 28px rgba(232,80,10,0.08); transform: translateY(-2px); }
+.symptom:nth-child(1){animation-delay:.05s}
+.symptom:nth-child(2){animation-delay:.12s}
+.symptom:nth-child(3){animation-delay:.19s}
+.symptom:nth-child(4){animation-delay:.26s}
+.symptom:nth-child(5){animation-delay:.33s}
+.symptom:nth-child(6){animation-delay:.40s}
+
+.s-icon { font-size: 24px; flex-shrink: 0; margin-top: 1px; }
+.s-text h4 { font-size: 15px; font-weight: 700; color: var(--dark); margin-bottom: 5px; line-height: 1.35; }
+.s-text p { font-size: 13px; color: var(--text2); line-height: 1.55; margin: 0; }
+
+.symptom-note {
+  margin-top: 36px;
+  background: var(--orange-pale);
+  border: 1.5px solid var(--orange-pale2);
+  border-left: 4px solid var(--orange);
+  border-radius: 14px;
+  padding: 28px 32px;
+  font-size: 17px;
+  color: var(--text);
+  line-height: 1.75;
+}
+.symptom-note strong { color: var(--orange-dark); font-weight: 700; }
+
+/* ── CTA STRIP ── */
+.cta-strip {
+  background: linear-gradient(135deg, var(--orange-dark), var(--orange));
+  padding: 44px 24px;
+  text-align: center;
+}
+.cta-strip p { color: rgba(255,255,255,0.92); font-size: 17px; margin-bottom: 22px; font-weight: 500; line-height: 1.6; }
+.cta-strip p strong { color: white; font-weight: 700; }
+.cta-strip-btn { display: inline-block; background: white; color: var(--orange-dark); font-size: 18px; font-weight: 700; padding: 18px 44px; border-radius: 10px; box-shadow: 0 6px 24px rgba(0,0,0,0.2); transition: transform 0.2s, box-shadow 0.2s; }
+.cta-strip-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(0,0,0,0.25); }
+
+/* ── SCIENCE ── */
+.science { background: var(--cream2); padding: 88px 24px; }
+.science-quote {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--orange);
+  border-radius: 16px;
+  padding: 28px 32px;
+  margin: 36px 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+.science-quote p { font-family: 'Lora', serif; font-size: 19px; font-style: italic; color: var(--orange-dark); line-height: 1.6; margin: 0; font-weight: 500; }
+.science-p { font-size: 18px; color: var(--text2); line-height: 1.85; margin-bottom: 20px; }
+.science-p strong { color: var(--dark); font-weight: 700; }
+.botanicals-label { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text2); margin-bottom: 16px; margin-top: 36px; opacity: 0.6; }
+.botanicals { display: flex; flex-wrap: wrap; gap: 10px; }
+.botanical { background: var(--orange-pale); border: 1.5px solid var(--orange-pale2); color: var(--orange-dark); padding: 8px 16px; border-radius: 100px; font-size: 13px; font-weight: 600; transition: background 0.2s; }
+.botanical:hover { background: var(--orange-pale2); }
+
+/* ── BENEFITS ── */
+.benefits { padding: 88px 24px; background: var(--white); }
+.benefits-grid { display: grid; gap: 16px; }
+@media(min-width:540px){ .benefits-grid { grid-template-columns: repeat(2,1fr); } }
+.benefit-card { background: var(--cream); border: 1px solid var(--border); border-radius: 18px; padding: 28px; transition: box-shadow 0.2s, transform 0.2s; }
+.benefit-card:hover { box-shadow: 0 8px 32px rgba(232,80,10,0.1); transform: translateY(-3px); border-color: rgba(232,80,10,0.15); }
+.benefit-card .emoji { font-size: 30px; margin-bottom: 14px; display: block; }
+.benefit-card h4 { font-size: 16px; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+.benefit-card p { font-size: 14px; color: var(--text2); line-height: 1.65; margin: 0; }
+
+/* ── TESTIMONIALS ── */
+.testimonials { padding: 88px 24px; background: var(--cream2); }
+.t-grid { display: grid; gap: 20px; }
+@media(min-width:600px){ .t-grid { grid-template-columns: repeat(3,1fr); } }
+.t-card { background: var(--white); border: 1px solid var(--border); border-radius: 20px; padding: 28px; position: relative; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: box-shadow 0.2s, transform 0.2s; }
+.t-card:hover { box-shadow: 0 12px 40px rgba(232,80,10,0.1); transform: translateY(-3px); }
+.t-card::before { content: '"'; font-family: 'Bebas Neue', sans-serif; font-size: 72px; color: var(--orange); opacity: 0.08; position: absolute; top: 10px; left: 20px; line-height: 1; }
+.t-stars { color: var(--orange); font-size: 14px; margin-bottom: 10px; }
+.t-verified { font-size: 10px; color: #16A34A; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 12px; }
+.t-card p { font-size: 14px; line-height: 1.75; color: var(--text); font-style: italic; margin-bottom: 18px; padding-left: 4px; font-family: 'Lora', serif; }
+.t-author { display: flex; align-items: center; gap: 12px; }
+.t-av { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, var(--orange-light), var(--orange-dark)); display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 16px; flex-shrink: 0; }
+.t-info strong { display: block; font-size: 14px; font-weight: 700; color: var(--dark); }
+.t-info span { font-size: 12px; color: var(--text2); }
+
+/* ── GUARANTEE ── */
+.guarantee { background: var(--dark); padding: 88px 24px; text-align: center; position: relative; overflow: hidden; }
+.guarantee::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(232,80,10,0.08) 0%, transparent 70%); }
+.guarantee img { width: 130px; margin-bottom: 24px; position: relative; filter: drop-shadow(0 8px 24px rgba(232,80,10,0.4)); }
+.guarantee h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(36px, 6vw, 56px); letter-spacing: 0.02em; color: white; margin-bottom: 20px; position: relative; }
+.guarantee p { font-size: 17px; color: rgba(255,255,255,0.7); line-height: 1.85; max-width: 580px; margin: 0 auto; position: relative; }
+.guarantee p strong { color: var(--orange-light); }
+
+/* ── BONUSES ── */
+.bonuses { padding: 88px 24px; background: var(--cream); }
+.bonuses-grid { display: grid; gap: 20px; }
+@media(min-width:500px){ .bonuses-grid { grid-template-columns: repeat(2,1fr); } }
+.bonus-card { background: var(--white); border: 1px solid var(--border); border-radius: 20px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.06); transition: box-shadow 0.2s, transform 0.2s; }
+.bonus-card:hover { box-shadow: 0 12px 40px rgba(232,80,10,0.1); transform: translateY(-3px); }
+.bonus-card img { width: 100%; height: 180px; object-fit: cover; }
+.bonus-body { padding: 24px; }
+.bonus-tag { font-size: 11px; font-weight: 700; color: var(--orange); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 4px; }
+.bonus-original { font-size: 12px; color: #AAA; text-decoration: line-through; margin-bottom: 4px; }
+.bonus-free-badge { display: inline-block; background: #DCFCE7; color: #15803D; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 100px; margin-bottom: 10px; }
+.bonus-body h4 { font-size: 15px; font-weight: 700; color: var(--dark); margin-bottom: 7px; line-height: 1.3; }
+.bonus-body p { font-size: 13px; color: var(--text2); line-height: 1.6; margin: 0; }
+
+/* ── OFFER ── */
+.offer { background: var(--cream2); padding: 88px 24px; }
+.offer-card { background: var(--white); border-radius: 28px; padding: 56px 44px; max-width: 600px; margin: 0 auto; text-align: center; box-shadow: 0 24px 80px rgba(0,0,0,0.1); border: 1px solid var(--border); position: relative; overflow: hidden; }
+.offer-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: linear-gradient(90deg, var(--orange-dark), var(--orange-light), var(--orange-dark)); }
+.offer-badge { display: inline-block; background: linear-gradient(135deg, var(--orange), var(--orange-dark)); color: white; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 7px 20px; border-radius: 100px; margin-bottom: 24px; }
+.offer-card h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(34px, 6vw, 52px); letter-spacing: 0.02em; line-height: 1.05; color: var(--dark); margin-bottom: 12px; }
+.offer-card h2 span { color: var(--orange); }
+.offer-desc { font-size: 16px; color: var(--text2); line-height: 1.6; margin-bottom: 28px; }
+.timer-wrap { background: var(--orange-pale); border: 1.5px solid var(--orange-pale2); border-radius: 14px; padding: 16px 20px; margin-bottom: 28px; }
+.timer-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--orange-dark); margin-bottom: 6px; }
+.timer-digits { font-family: 'Bebas Neue', sans-serif; font-size: 50px; letter-spacing: 0.05em; color: var(--orange); line-height: 1; }
+.offer-img { width: 170px; margin: 0 auto 24px; display: block; filter: drop-shadow(0 16px 32px rgba(232,80,10,0.2)); animation: float 4s ease-in-out infinite; }
+.price-row { display: flex; align-items: center; justify-content: center; gap: 14px; margin-bottom: 6px; }
+.price-was { font-size: 20px; color: #BBB; text-decoration: line-through; }
+.price-now { font-family: 'Bebas Neue', sans-serif; font-size: 64px; color: var(--orange); line-height: 1; letter-spacing: 0.02em; }
+.price-pct { background: #DCFCE7; color: #15803D; font-size: 13px; font-weight: 700; padding: 5px 12px; border-radius: 100px; }
+.price-note { font-size: 13px; color: var(--text2); margin-bottom: 28px; }
+.secure-line { font-size: 12px; color: var(--text2); display: flex; align-items: center; justify-content: center; gap: 6px; margin-bottom: 24px; }
+.trust-badges { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; padding-top: 22px; border-top: 1px solid var(--border); }
+.trust-badge { font-size: 12px; color: var(--text2); font-weight: 500; display: flex; align-items: center; gap: 5px; }
+
+/* ── FAQ ── */
+.faq { background: var(--white); padding: 88px 24px; }
+.faq-list { display: grid; gap: 12px; }
+.faq-item { background: var(--cream); border: 1px solid var(--border); border-radius: 14px; padding: 22px 26px; cursor: pointer; transition: border-color 0.2s, box-shadow 0.2s; }
+.faq-item:hover { border-color: rgba(232,80,10,0.3); box-shadow: 0 4px 16px rgba(232,80,10,0.06); }
+.faq-item.open { border-color: rgba(232,80,10,0.3); background: var(--white); }
+.faq-q { font-size: 15px; font-weight: 600; display: flex; justify-content: space-between; align-items: center; gap: 12px; color: var(--dark); }
+.faq-q .arrow { font-size: 18px; color: var(--orange); transition: transform 0.3s; flex-shrink: 0; }
+.faq-a { font-size: 14px; color: var(--text2); line-height: 1.7; margin-top: 14px; display: none; }
+.faq-item.open .faq-a { display: block; }
+.faq-item.open .arrow { transform: rotate(180deg); }
+
+/* ── FOOTER ── */
+footer { background: var(--dark); padding: 52px 24px; text-align: center; }
+.footer-brand { font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: 0.08em; color: white; margin-bottom: 16px; }
+.footer-brand span { color: var(--orange); }
+.footer-links { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px; }
+.footer-links a { color: rgba(255,255,255,0.35); font-size: 12px; transition: color 0.2s; }
+.footer-links a:hover { color: var(--orange-light); }
+.footer-legal { font-size: 10px; color: rgba(255,255,255,0.2); line-height: 1.9; max-width: 680px; margin: 0 auto; }
+
+/* ── STICKY BAR ── */
+.sticky-bar { position: fixed; bottom: 0; left: 0; right: 0; background: var(--white); border-top: 2px solid var(--orange); padding: 12px 28px; display: flex; align-items: center; justify-content: space-between; gap: 12px; z-index: 300; box-shadow: 0 -4px 24px rgba(0,0,0,0.1); }
+.sticky-text { line-height: 1.4; }
+.sticky-text strong { display: block; color: var(--dark); font-size: 13px; font-weight: 700; letter-spacing: 0.04em; }
+.sticky-text span { color: var(--text2); font-size: 11px; }
+.sticky-btn { background: var(--orange); color: white; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 14px 28px; border-radius: 6px; white-space: nowrap; box-shadow: 0 4px 16px rgba(232,80,10,0.35); flex-shrink: 0; transition: background 0.2s, transform 0.2s; }
+.sticky-btn:hover { background: var(--orange-dark); transform: translateY(-1px); }
+
+/* ── ANIMATIONS ── */
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+@keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(6px)} }
+@keyframes fadeUp { to{opacity:1;transform:translateY(0)} }
 </style>
 </head>
 <body>
 
-<!-- FLASH BANNER -->
-<div class="flash-banner">
-  ⚡ EXCLUSIVE OFFER: Get CitrusBurn for <strong>$49/Bottle</strong> + Save Up to $300 — Risk-Free 180-Day Trial!
+<!-- TOPBAR -->
+<div class="topbar">
+  ⚡ EXCLUSIVE OFFER: GET CITRUSBURN FOR $49/BOTTLE + SAVE UP TO $300 — RISK-FREE 180-DAY TRIAL!
 </div>
 
 <!-- NAV -->
-<nav>
-  <div class="nav-logo">Citrus<span>Burn</span>™</div>
+<nav class="nav">
+  <div class="nav-brand">CITRUS <span class="burn">BURN</span> ™</div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#benefits">Benefits</a></li>
     <li><a href="#ingredients">Ingredients</a></li>
     <li><a href="#faq">FAQs</a></li>
-    <li><a href="https://hop.clickbank.net/?affiliate=criscorr34&vendor=citrusburn&tid=citrusburnoffff" class="nav-cta">Order Now</a></li>
   </ul>
+  <a href="https://hop.clickbank.net/?affiliate=criscorr34&vendor=citrusburn&tid=citrusburnoffff" class="nav-cta">Order Now</a>
 </nav>
 
 <!-- HERO -->
 <section class="hero" id="about">
-  <div class="wrapper">
-    <div class="hero-offer">🔥 #2 Best Seller · ClickBank 2026</div>
-    <h1>Wake Up Slimmer:<br><span class="orange">Ignite Your Metabolism</span><br>with CitrusBurn™</h1>
-    <p class="hero-sub">CitrusBurn™ is the ultimate metabolic spark, meticulously crafted with seven rare, science-backed botanicals to revitalize your body's natural calorie-burning engine. Why settle for synthetic stimulants when you can harness the pure power of Seville Orange and Himalayan Ginger?</p>
+  <div class="wrap">
+    <div class="hero-eyebrow">🔥 #2 Best Seller · ClickBank 2026</div>
+    <h1>
+      Why Can't I Lose Weight
+      <span class="accent">No Matter What I Do?</span>
+    </h1>
+    <p class="hero-sub">
+      I eat clean. I work out. I try diet after diet. <strong>And the scale won't move.</strong><br>If this sounds like your life — I finally found the real reason why.
+    </p>
 
-    <div class="product-img-wrap">
-      <img src="https://citrus-burnn.us/assets/images/citrusburn.jpg" alt="CitrusBurn Supplement Bottle" onerror="this.style.display='none'">
+    <div class="hero-body">
+      <div class="hero-product-wrap">
+        <img src="https://citrus-burnn.us/assets/images/citrusburn.jpg" alt="CitrusBurn" class="hero-product">
+        <div class="hero-product-glow"></div>
+      </div>
+      <div class="hero-cta-col">
+        <div class="price-preview">
+          <span class="was">$127</span>
+          <span class="now">$49</span>
+          <span class="pct">80% OFF</span>
+        </div>
+        <div class="per-bottle">per bottle · one-time payment · free shipping</div>
+        <a href="https://hop.clickbank.net/?affiliate=criscorr34&vendor=citrusburn&tid=citrusburnoffff" class="btn-main">🔥 Get a Discount Now →</a>
+        <a href="https://hop.clickbank.net/?affiliate=criscorr34&vendor=citrusburn&tid=citrusburnoffff" class="btn-outline">Visit Official Site →</a>
+        <div class="hero-mini-trust">
+          <div class="trust-row"><span>🔒</span> Secure 256-bit SSL Checkout</div>
+          <div class="trust-row"><span>✅</span> 180-Day Money-Back Guarantee</div>
+          <div class="trust-row"><span>🚚</span> Free Shipping Available</div>
+        </div>
+      </div>
     </div>
 
-    <div class="hero-btns">
-      <a href="https://hop.clickbank.net/?affiliate=criscorr34&vendor=citrusburn&tid=citrusburnoffff" class="btn-primary">🔥 Get a Discount Now</a>
-      <a href="https://hop.clickbank.net/?affiliate=criscorr34&vendor=citrusburn&tid=citrusburnoffff" class="btn-secondary">Visit Official Site →</a>
-      <p class="btn-sub">🔒 Secure Checkout · <span>180-Day Money-Back Guarantee</span> · Free Shipping</p>
+    <div class="hero-wave">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path fill="#FAFAF8" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"/>
+      </svg>
     </div>
   </div>
 </section>
 
-<!-- TRUST BADGES -->
-<section class="trust-section">
-  <div class="trust-grid">
-    <div class="trust-item">
-      <div class="trust-svg">
-        <img src="https://citrus-burnn.us/assets/images/natural-product-500x300.webp" alt="100% Natural Product">
-      </div>
+<!-- BADGES -->
+<div class="badges">
+  <div class="badges-grid">
+    <div class="badge-card">
+      <img src="https://citrus-burnn.us/assets/images/natural-product-500x300.webp" alt="100% Natural">
       <h4>100% Natural</h4>
-      <p>Free from synthetic fillers & dangerous stimulants</p>
+      <p>Free from synthetic fillers & stimulants</p>
     </div>
-    <div class="trust-item">
-      <div class="trust-svg">
-        <img src="https://citrus-burnn.us/assets/images/fda-approved-500x300.webp" alt="FDA Registered">
-      </div>
+    <div class="badge-card">
+      <img src="https://citrus-burnn.us/assets/images/fda-approved-500x300.webp" alt="FDA Registered">
       <h4>FDA Registered</h4>
-      <p>Produced in an FDA-registered facility with strict oversight</p>
+      <p>Produced with strict FDA oversight</p>
     </div>
-    <div class="trust-item">
-      <div class="trust-svg">
-        <img src="https://citrus-burnn.us/assets/images/made-in-usa-500x300.webp" alt="Made in USA">
-      </div>
+    <div class="badge-card">
+      <img src="https://citrus-burnn.us/assets/images/made-in-usa-500x300.webp" alt="Made in USA">
       <h4>Made in USA</h4>
-      <p>Formulated & manufactured in the United States</p>
+      <p>Formulated & manufactured in the US</p>
     </div>
-    <div class="trust-item">
-      <div class="trust-svg">
-        <img src="https://citrus-burnn.us/assets/images/gmp-certified-500x300.webp" alt="GMP Certified">
-      </div>
+    <div class="badge-card">
+      <img src="https://citrus-burnn.us/assets/images/gmp-certified-500x300.webp" alt="GMP Certified">
       <h4>GMP Certified</h4>
-      <p>Gold standard quality control from raw material to final seal</p>
+      <p>Gold standard quality control</p>
+    </div>
+  </div>
+</div>
+
+<!-- SYMPTOMS -->
+<section class="symptoms">
+  <div class="wrap">
+    <div class="section-tag">Sound Familiar?</div>
+    <h2 class="section-h2">I Feel Like My Body<br>Is Working Against Me</h2>
+    <p class="section-intro">Check the ones that hit close to home. Be honest — this matters.</p>
+    <div class="symptoms-grid">
+      <div class="symptom">
+        <div class="s-icon">😴</div>
+        <div class="s-text">
+          <h4>I wake up exhausted no matter how much I sleep</h4>
+          <p>It doesn't matter if I sleep 6 or 9 hours. By mid-morning I'm already running on empty.</p>
+        </div>
+      </div>
+      <div class="symptom">
+        <div class="s-icon">🔄</div>
+        <div class="s-text">
+          <h4>I've tried every diet — the weight always comes back</h4>
+          <p>Keto, fasting, calorie counting, low-carb. I lose a little... then it all returns. Sometimes more.</p>
+        </div>
+      </div>
+      <div class="symptom">
+        <div class="s-icon">🍩</div>
+        <div class="s-text">
+          <h4>I crave sugar constantly and I can't seem to stop it</h4>
+          <p>Especially in the afternoon. I know I shouldn't — but the craving takes over.</p>
+        </div>
+      </div>
+      <div class="symptom">
+        <div class="s-icon">🪨</div>
+        <div class="s-text">
+          <h4>My belly fat won't move no matter what I try</h4>
+          <p>I've exercised it. I've starved it. I've targeted it. It simply doesn't care.</p>
+        </div>
+      </div>
+      <div class="symptom">
+        <div class="s-icon">🧠</div>
+        <div class="s-text">
+          <h4>I feel foggy and unmotivated every single day</h4>
+          <p>Focus is a struggle. I feel like I'm operating at half capacity — and I don't know why.</p>
+        </div>
+      </div>
+      <div class="symptom">
+        <div class="s-icon">📉</div>
+        <div class="s-text">
+          <h4>I feel like my metabolism has completely stopped</h4>
+          <p>Like my body just decided to stop cooperating — no matter how clean I eat or how hard I train.</p>
+        </div>
+      </div>
+    </div>
+    <div class="symptom-note">
+      If you checked even <strong>2 or 3 of those</strong> — your metabolic switch is almost certainly stuck. No diet or workout was ever designed to fix that. But here's what actually can.
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP 1 -->
+<div class="cta-strip">
+  <p><strong>Ready to finally fix what's been holding you back?</strong><br>Join thousands who've already reignited their metabolism — completely risk free.</p>
+  <a href="https://hop.clickbank.net/?affiliate=criscorr34&vendor=citrusburn&tid=citrusburnoffff" class="cta-strip-btn">🔥 Claim My 80% Discount Now →</a>
+</div>
+
+<!-- SCIENCE -->
+<section class="science">
+  <div class="wrap">
+    <div class="section-tag">The Real Reason</div>
+    <h2 class="section-h2">Here's What's <span>Actually Happening</span><br>Inside My Body</h2>
+    <p class="science-p">My body has a built-in fat-burning system called <strong>thermogenesis</strong> — a metabolic "on switch." When it's working, my body burns stored fat for fuel all day, even at rest. When it's stuck in the <strong>"off" position</strong>, nothing I do seems to work.</p>
+    <p class="science-p">After years of processed food, chronic stress, and hormonal changes, this switch gets jammed. No diet or exercise routine directly targets this — because they were never designed to. That's why I kept failing. <strong>It was never about willpower.</strong></p>
+    <div class="science-quote">
+      <p>"Researchers found that populations consuming specific rare botanicals daily maintained healthy weight well into old age — not from dieting, but because these plants directly activate the body's thermogenic response."</p>
+    </div>
+    <p class="science-p">Scientists identified <strong>7 specific rare botanicals</strong> that work together to reignite the body's natural fat-burning furnace — without stimulants, without chemicals, without changing my diet. These are the exact 7 botanicals in CitrusBurn™.</p>
+    <div class="botanicals-label" id="ingredients">The 7 key botanicals</div>
+    <div class="botanicals">
+      <span class="botanical">🍊 Seville Orange Peel — Activates fat burning</span>
+      <span class="botanical">🌶 Andalusian Red Pepper — Melts stubborn fat</span>
+      <span class="botanical">🫚 Himalayan Mountain Ginger — Reduces inflammation</span>
+      <span class="botanical">🍵 Ceremonial Green Tea — Boosts energy & antioxidants</span>
+      <span class="botanical">🌿 Berberine — Balances blood sugar & focus</span>
+      <span class="botanical">🌱 Korean Red Ginseng — Strengthens metabolic response</span>
+      <span class="botanical">🍎 Spanish Red Apple Vinegar — Supports digestion</span>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits" id="benefits">
+  <div class="wrap">
+    <div class="section-tag">What Changes</div>
+    <h2 class="section-h2">What I Started Feeling<br>When My Metabolism <span>Woke Up</span></h2>
+    <p class="section-intro">Here's what users report within the first weeks:</p>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <span class="emoji">🔥</span>
+        <h4>My body finally burns fat — even at rest</h4>
+        <p>Stored fat becomes the primary fuel source, even between meals and during sleep.</p>
+      </div>
+      <div class="benefit-card">
+        <span class="emoji">⚡</span>
+        <h4>I have real energy all day — without caffeine</h4>
+        <p>No more 3pm crashes. Clean, steady energy that lasts from morning to night.</p>
+      </div>
+      <div class="benefit-card">
+        <span class="emoji">🧠</span>
+        <h4>My focus and clarity came back</h4>
+        <p>When metabolism is balanced, the brain gets the fuel it needs — mental fog lifts naturally.</p>
+      </div>
+      <div class="benefit-card">
+        <span class="emoji">🩺</span>
+        <h4>My cravings dropped dramatically</h4>
+        <p>As blood sugar stabilizes, the urge for sugar and carbs fades — finally.</p>
+      </div>
+      <div class="benefit-card">
+        <span class="emoji">🌙</span>
+        <h4>I burn fat while I sleep</h4>
+        <p>Thermogenesis doesn't stop at night — CitrusBurn supports metabolic rate around the clock.</p>
+      </div>
+      <div class="benefit-card">
+        <span class="emoji">💪</span>
+        <h4>No jitters. No racing heart. No dependency.</h4>
+        <p>Pure botanicals working with my body. No stimulants. No synthetic chemicals.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- TESTIMONIALS -->
-<section class="testi-section" id="reviews">
-  <div class="wrapper">
+<section class="testimonials">
+  <div class="wrap">
     <div class="section-tag">Real People · Real Results</div>
-    <div class="section-title">Life-Changing Feedback From<br><span>CitrusBurn Users</span></div>
-
-    <div class="testi-grid">
-      <div class="testi-card">
-        <div class="testi-avatar testi-avatar-f">E</div>
-        <div class="testi-verified">✓ Verified Purchase</div>
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"My metabolism feels like it's finally 'awake' again. I've lost those stubborn last five pounds and I feel lighter and more focused than I have in years. The customer service team is top-notch too!"</p>
-        <div class="testi-name">Elena R. · Miami, FL</div>
+    <h2 class="section-h2">They Had The Same<br>Question I Did</h2>
+    <div class="t-grid">
+      <div class="t-card">
+        <div class="t-stars">★★★★★</div>
+        <div class="t-verified">✓ Verified Purchase</div>
+        <p>"I kept asking myself why nothing was working. 3 failed diets in 2 years. Within 3 weeks of CitrusBurn my energy came back. By week 6 I was down 14 lbs without changing my routine."</p>
+        <div class="t-author">
+          <div class="t-av">E</div>
+          <div class="t-info"><strong>Elena R.</strong><span>Miami, FL</span></div>
+        </div>
       </div>
-      <div class="testi-card">
-        <div class="testi-avatar testi-avatar-m">M</div>
-        <div class="testi-verified">✓ Verified Purchase</div>
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"I love that CitrusBurn™ is all-natural. I've tried the injections and the 'fad' pills but they always made me feel sick. This is different — gentle on my system but incredible results. Best investment I've made this year!"</p>
-        <div class="testi-name">Marcus D. · Chicago, IL</div>
+      <div class="t-card">
+        <div class="t-stars">★★★★★</div>
+        <div class="t-verified">✓ Verified Purchase</div>
+        <p>"I worked out 4x a week and my belly fat wouldn't move. I thought it was just genetics. After 45 days on CitrusBurn, my wife noticed before I did. Down 19 lbs. Finally flat."</p>
+        <div class="t-author">
+          <div class="t-av">M</div>
+          <div class="t-info"><strong>Marcus D.</strong><span>Chicago, IL</span></div>
+        </div>
       </div>
-      <div class="testi-card">
-        <div class="testi-avatar testi-avatar-f2">S</div>
-        <div class="testi-verified">✓ Verified Purchase</div>
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"After just three weeks, I had steady energy all afternoon without the coffee jitters. Even better, I'm finally seeing progress in the mirror that months of dieting couldn't achieve. So easy to fit into my morning routine!"</p>
-        <div class="testi-name">Sarah J. · Austin, TX</div>
-      </div>
-    </div>
-
-    <!-- GUARANTEE SEAL -->
-    <div class="guarantee-seal">
-      <div class="seal-img-wrap">
-        <img src="https://citrus-burnn.us/assets/images/satisfaction-guaranteed.png" alt="180 Day Money Back Guarantee">
-      </div>
-      <div class="seal-text">
-        <h4>180-Day Money-Back Guarantee</h4>
-        <p>You have a full <strong>six months — 180 days</strong> — to experience the metabolic power of CitrusBurn™. If you don't see the visible results you were hoping for, or if you aren't 100% satisfied for <em>any reason at all</em>, simply contact us for a full, courteous refund.</p>
-        <p style="margin-top:12px;"><strong style="color:var(--orange);">No hassles. No questions. No stress.</strong> Your satisfaction is our only metric for success.</p>
+      <div class="t-card">
+        <div class="t-stars">★★★★★</div>
+        <div class="t-verified">✓ Verified Purchase</div>
+        <p>"The 3pm energy crash I'd had for years? Gone by week 2. The brain fog? Gone. I'm down 11 lbs without dieting and I finally feel like myself again for the first time in years."</p>
+        <div class="t-author">
+          <div class="t-av">S</div>
+          <div class="t-info"><strong>Sarah J.</strong><span>Austin, TX</span></div>
+        </div>
       </div>
     </div>
-
   </div>
 </section>
 
-<!-- FLASH SALE BOX -->
-<section style="padding: 60px 20px; background: var(--dark);">
-  <div class="wrapper">
-    <div class="flash-box">
-      <span class="flash-label">⚡ Flash Sale — Limited Time</span>
-      <h2>Get 2 Bonuses FREE<br>+ Massive CitrusBurn Discount</h2>
-      <p>Stock is Running Low. Claim Your Reserved Shipment Before It's Gone!</p>
-      <img src="https://citrus-burnn.us/assets/images/citrusburn-order-from-the-official-website.jpg" alt="CitrusBurn Order" onerror="this.style.display='none'">
-      <div class="urgency-text">⚠️ HIGH DEMAND: Limited stock remains. Your exclusive 80% discount vanishes when the timer runs out!</div>
-      <a href="https://hop.clickbank.net/?affiliate=criscorr34&vendor=citrusburn&tid=citrusburnoffff" class="btn-primary">Get CitrusBurn From Official Site →</a>
-    </div>
-  </div>
-</section>
+<!-- CTA STRIP 2 -->
+<div class="cta-strip">
+  <p>They asked the same question you did. Now they have their answer.<br><strong>Get CitrusBurn™ at 80% OFF — 180-Day Money-Back Guarantee.</strong></p>
+  <a href="https://hop.clickbank.net/?affiliate=criscorr34&vendor=citrusburn&tid=citrusburnoffff" class="cta-strip-btn">🔥 Get My Discount Now →</a>
+</div>
 
 <!-- GUARANTEE -->
-<section class="guarantee-section" id="guarantee">
-  <div class="wrapper">
-    <div class="guarantee-inner">
-      <img src="https://citrus-burnn.us/assets/images/satisfaction-guaranteed.png" alt="180 Day Guarantee" onerror="this.style.display='none'">
-      <div>
-        <div class="section-tag">Zero Risk</div>
-        <h2>Six Months of Security:<br><span style="color:var(--orange)">180-Day Money-Back Guarantee</span></h2>
-        <p>You have a full six months — 180 days — to experience the metabolic power of CitrusBurn™. If you don't see the visible results you were hoping for, or if you aren't 100% satisfied for any reason at all, we want to make it right.</p>
-        <p>No hassles. No questions. No stress. Your satisfaction is our only metric for success.</p>
-        <a href="https://hop.clickbank.net/?affiliate=criscorr34&vendor=citrusburn&tid=citrusburnoffff" class="btn-primary">Get Your Bottle Now →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section class="how-section" id="benefits">
-  <div class="wrapper">
-    <div class="how-inner">
-      <img src="https://citrus-burnn.us/assets/images/citrusburn-capsule.jpg" alt="CitrusBurn Capsule" onerror="this.style.display='none'">
-      <div>
-        <div class="section-tag">The Science</div>
-        <div class="section-title">More Than Weight Loss:<br><span>Total Body Transformation</span></div>
-        <p style="color:var(--gray);margin-bottom:20px;">CitrusBurn™ works by targeting the biological "on-switch" of your metabolism — supporting healthy insulin sensitivity and thermogenesis around the clock.</p>
-        <ul class="benefits-list">
-          <li><div class="check">✓</div><div><strong>Accelerated Fat Oxidation</strong>Naturally prompts the body to use stored fat as a primary fuel source.</div></li>
-          <li><div class="check">✓</div><div><strong>Sustainable All-Day Vitality</strong>Steady natural energy from morning to night — no crashes.</div></li>
-          <li><div class="check">✓</div><div><strong>Restorative Sleep Burning</strong>Supports your metabolic rate even while you sleep.</div></li>
-          <li><div class="check">✓</div><div><strong>Healthy Blood Sugar Support</strong>Helps maintain glucose levels to reduce cravings naturally.</div></li>
-          <li><div class="check">✓</div><div><strong>Pure & Stimulant-Free</strong>Clean formula that respects your heart health and nervous system.</div></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- INGREDIENTS -->
-<section class="ingredients-section" id="ingredients">
-  <div class="wrapper">
-    <div class="section-tag">Earth-Sourced Formula</div>
-    <div class="section-title">7 Rare Botanicals<br><span>Powering CitrusBurn™</span></div>
-    <div class="ingredients-grid">
-      <div class="ingredient-card"><div class="ingredient-num">1</div><h4>🍊 Seville Orange Peel</h4><p>Sourced from the Mediterranean. Triggers thermogenesis without stressing the cardiovascular system.</p></div>
-      <div class="ingredient-card"><div class="ingredient-num">2</div><h4>🍎 Spanish Red Apple Vinegar</h4><p>Premium evolution of traditional ACV. Supports healthy digestion and weight management.</p></div>
-      <div class="ingredient-card"><div class="ingredient-num">3</div><h4>🌶 Andalusian Red Pepper</h4><p>Rich in natural capsaicinoids. Gently raises core temperature to melt stubborn fat reserves.</p></div>
-      <div class="ingredient-card"><div class="ingredient-num">4</div><h4>🫚 Himalayan Mountain Ginger</h4><p>Legendary root that supports healthy inflammation and keeps your digestive system humming.</p></div>
-      <div class="ingredient-card"><div class="ingredient-num">5</div><h4>🍵 Ceremonial Green Tea</h4><p>High-grade EGCG antioxidants to protect cells while mobilizing energy throughout the day.</p></div>
-      <div class="ingredient-card"><div class="ingredient-num">6</div><h4>🌿 Berberine</h4><p>Optimizes metabolic pathways and improves focus and natural immunity at the cellular level.</p></div>
-      <div class="ingredient-card"><div class="ingredient-num">7</div><h4>🌱 Korean Red Ginseng</h4><p>Elite adaptogen that works with Berberine to strengthen your body's natural metabolic response.</p></div>
-    </div>
+<section class="guarantee">
+  <div class="wrap">
+    <img src="https://citrus-burnn.us/assets/images/satisfaction-guaranteed.png" alt="180 Day Money Back Guarantee">
+    <h2>180-Day Money-Back Guarantee</h2>
+    <p>Try CitrusBurn™ for a full <strong>six months — completely risk free.</strong> If you don't see the results you hoped for, or if you're not 100% satisfied for any reason at all, you get a complete refund. <strong>No questions. No hassle. No stress.</strong></p>
   </div>
 </section>
 
 <!-- BONUSES -->
-<section class="bonus-section">
-  <div class="wrapper">
-    <div class="section-tag">🎁 Free With Your Order</div>
-    <div class="section-title">The Ultimate Value Bundle:<br><span>2 Exclusive Bonuses FREE</span></div>
-    <div class="bonus-grid">
+<section class="bonuses">
+  <div class="wrap">
+    <div class="section-tag">🎁 Free With My Order</div>
+    <h2 class="section-h2">2 Exclusive Bonuses<br><span>FREE Today</span></h2>
+    <p class="section-intro">Order today and receive both digital bonuses at no extra cost.</p>
+    <div class="bonuses-grid">
       <div class="bonus-card">
-        <img src="https://citrus-burnn.us/assets/images/free-bonus.jpg" alt="Bonus 1" onerror="this.style.display='none'">
-        <div>
-          <h4>FREE BONUS #1</h4>
-          <p class="original">Originally $55</p>
-          <p class="free">✓ Yours FREE Today</p>
-          <p><strong>Spanish Rapid Detox Protocol</strong> — 15-day Mediterranean cleanse using simple, powerful ingredients from your kitchen to jumpstart your results.</p>
+        <img src="https://citrus-burnn.us/assets/images/free-bonus.jpg" alt="Bonus 1">
+        <div class="bonus-body">
+          <div class="bonus-tag">Free Bonus #1</div>
+          <div class="bonus-original">Originally $55</div>
+          <div class="bonus-free-badge">✓ Yours FREE Today</div>
+          <h4>Spanish Rapid Detox Protocol</h4>
+          <p>15-day Mediterranean cleanse using simple ingredients from your kitchen to jumpstart results.</p>
         </div>
       </div>
       <div class="bonus-card">
-        <img src="https://citrus-burnn.us/assets/images/bonus-free.jpg" alt="Bonus 2" onerror="this.style.display='none'">
-        <div>
-          <h4>FREE BONUS #2</h4>
-          <p class="original">Originally $55</p>
-          <p class="free">✓ Yours FREE Today</p>
-          <p><strong>Mind Over Metabolism Mastery</strong> — Daily 5-minute visualization and craving-reset techniques to lock in your long-term transformation.</p>
+        <img src="https://citrus-burnn.us/assets/images/bonus-free.jpg" alt="Bonus 2">
+        <div class="bonus-body">
+          <div class="bonus-tag">Free Bonus #2</div>
+          <div class="bonus-original">Originally $55</div>
+          <div class="bonus-free-badge">✓ Yours FREE Today</div>
+          <h4>Mind Over Metabolism Mastery</h4>
+          <p>Daily 5-minute visualization and craving-reset techniques to lock in long-term transformation.</p>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFER -->
+<section class="offer" id="order">
+  <div class="wrap">
+    <div class="offer-card">
+      <div class="offer-badge">⚡ Flash Sale — Limited Time</div>
+      <h2>I'm Ready To Fix<br><span>My Metabolism Today</span></h2>
+      <p class="offer-desc">Stock is running low. Your discount is reserved for the next:</p>
+      <div class="timer-wrap">
+        <div class="timer-label">⏰ Offer expires in</div>
+        <div class="timer-digits" id="timer">14:59</div>
+      </div>
+      <img src="https://citrus-burnn.us/assets/images/citrusburn-best-package.png" alt="CitrusBurn Best Package" class="offer-img">
+      <div class="price-row">
+        <span class="price-was">$127</span>
+        <span class="price-now">$49</span>
+        <span class="price-pct">80% OFF</span>
+      </div>
+      <div class="price-note">per bottle · one-time payment · free shipping available</div>
+      <a href="https://hop.clickbank.net/?affiliate=criscorr34&vendor=citrusburn&tid=citrusburnoffff" class="btn-main">🔥 Claim My 80% Discount Now →</a>
+      <a href="https://hop.clickbank.net/?affiliate=criscorr34&vendor=citrusburn&tid=citrusburnoffff" class="btn-outline" style="margin-bottom:22px;">Visit Official Site →</a>
+      <div class="secure-line">🔒 256-bit SSL Secure Checkout · No Subscription · Cancel Anytime</div>
+      <div class="trust-badges">
+        <div class="trust-badge">✅ 180-Day Guarantee</div>
+        <div class="trust-badge">🇺🇸 Made in USA</div>
+        <div class="trust-badge">🌿 100% Natural</div>
+        <div class="trust-badge">🏭 FDA Registered</div>
+        <div class="trust-badge">🎁 2 Free Bonuses</div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- FAQ -->
-<section class="faq-section" id="faq">
-  <div class="wrapper">
+<section class="faq" id="faq">
+  <div class="wrap">
     <div class="section-tag">Got Questions?</div>
-    <div class="section-title">Everything You Need to Know<br><span>About CitrusBurn™</span></div>
+    <h2 class="section-h2">Everything I Need<br>To Know</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q">Is CitrusBurn safe to take with other supplements?</div>
+        <div class="faq-q">Is CitrusBurn safe to take with other supplements? <span class="arrow">▾</span></div>
         <div class="faq-a">Yes, CitrusBurn is made from 100% natural ingredients and is generally safe, though we always recommend consulting your physician first.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">How long does it take to see results?</div>
-        <div class="faq-a">While many feel an energy boost within days, the most significant metabolic transformations typically occur after 90 to 180 days of consistent use.</div>
+        <div class="faq-q">How long until I start seeing results? <span class="arrow">▾</span></div>
+        <div class="faq-a">Many people feel an energy difference within the first week. Visible changes in body composition typically appear after 3–6 weeks of consistent use.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Do I need to follow a strict diet?</div>
+        <div class="faq-q">Do I need to follow a strict diet? <span class="arrow">▾</span></div>
         <div class="faq-a">No. While healthy eating helps, CitrusBurn is designed to support your metabolism regardless of your specific diet plan.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Is this a one-time payment?</div>
-        <div class="faq-a">Absolutely. There are no hidden subscriptions or "auto-ship" gimmicks — just a simple, one-time purchase.</div>
+        <div class="faq-q">Is this a one-time payment? No subscriptions? <span class="arrow">▾</span></div>
+        <div class="faq-a">Absolutely. There are no hidden subscriptions or auto-ship gimmicks — just a simple one-time purchase.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">What if it doesn't work for me?</div>
-        <div class="faq-a">You are fully covered by our 180-Day Money Back Guarantee. If you aren't happy, you don't pay. Simple as that.</div>
+        <div class="faq-q">What if it doesn't work for me? <span class="arrow">▾</span></div>
+        <div class="faq-a">You're fully covered by the 180-Day Money Back Guarantee. If you aren't happy for any reason, you don't pay. Simple as that.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">How do I take CitrusBurn?</div>
-        <div class="faq-a">For best results, simply take the recommended serving with a glass of water each morning to ignite your metabolism for the day.</div>
+        <div class="faq-q">How do I take CitrusBurn? <span class="arrow">▾</span></div>
+        <div class="faq-a">Simply take the recommended serving with a glass of water each morning to ignite your metabolism for the day ahead.</div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- FINAL CTA -->
-<section class="final-cta">
-  <div class="wrapper">
-    <div class="section-tag">🔥 Price Drop Alert</div>
-    <div class="section-title">Short-Term Steal:<br><span>High-Performance Results at a Special One-Time Price!</span></div>
-    <img src="https://citrus-burnn.us/assets/images/citrusburn-best-package.png" alt="CitrusBurn Best Package" onerror="this.style.display='none'">
-    <div class="price-badge">
-      <span class="old-price">$127</span>
-      <span class="new-price">$49/bottle</span>
-      <span class="discount-tag">80% OFF</span>
-    </div>
-    <br><br>
-    <a href="https://hop.clickbank.net/?affiliate=criscorr34&vendor=citrusburn&tid=citrusburnoffff" class="btn-primary">🔥 GET YOUR 80% DISCOUNT NOW</a>
-    <p class="btn-sub" style="margin-top:14px;">🔒 Secure Checkout · <span style="color:var(--orange)">180-Day Money-Back Guarantee</span> · Free Shipping Available</p>
-  </div>
-</section>
-
-<!-- SECURE PAYMENT -->
-<section class="secure-section">
-  <div class="wrapper">
-    <h3>Safe & Seamless Checkout — Your Privacy Is Our Priority</h3>
-    <p>Your payment information is never stored on our servers. We use 256-bit SSL encryption — the same gold standard used by major banks and elite online retailers.</p>
-    <img src="https://citrus-burnn.us/assets/images/citrusburn-secure-payment.jpg" alt="Secure Payment" onerror="this.style.display='none'">
-    <p>ClickBank is the retailer of products on this site. CLICKBANK® is a registered trademark of Click Sales, Inc.</p>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">Citrus<span>Burn</span>™</div>
+  <div class="footer-brand">CITRUS <span>BURN</span> ™</div>
   <div class="footer-links">
     <a href="#">Privacy Policy</a>
     <a href="#">Disclaimer</a>
     <a href="#">Terms & Conditions</a>
   </div>
-  <p class="footer-disclaimer">* Advertising Disclosure: This page contains affiliate links. The author may receive a commission if you purchase through these links at no extra cost to you. Results shown are based on customer testimonials. Individual results will vary. These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Consult your physician before beginning any supplement program. © 2026 All Rights Reserved.</p>
+  <div class="footer-legal">
+    ClickBank is the retailer of products on this site. CLICKBANK® is a registered trademark of Click Sales, Inc.<br><br>
+    * Advertising Disclosure: This page contains affiliate links. The author may receive a commission if you purchase through these links at no extra cost to you. Results shown are based on customer testimonials. Individual results will vary. These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Consult your physician before beginning any supplement program. © 2026 All Rights Reserved.
+  </div>
 </footer>
 
-<!-- FLOATING BAR -->
-<div class="floating-bar">
-  <div class="floating-bar-text">
+<!-- STICKY BAR -->
+<div class="sticky-bar">
+  <div class="sticky-text">
     <strong>CitrusBurn™ — Up to 80% OFF Today</strong>
     <span>180-Day Money-Back Guarantee · Free Shipping</span>
   </div>
-  <a href="https://hop.clickbank.net/?affiliate=criscorr34&vendor=citrusburn&tid=citrusburnoffff" class="floating-bar-btn">Get Discount Now →</a>
+  <a href="https://hop.clickbank.net/?affiliate=criscorr34&vendor=citrusburn&tid=citrusburnoffff" class="sticky-btn">Get Discount Now →</a>
 </div>
 
 <script>
-// FAQ accordion
-document.querySelectorAll('.faq-q').forEach(q => {
-  q.addEventListener('click', () => {
-    const item = q.parentElement;
-    const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-    if (!isOpen) item.classList.add('open');
+  let secs = 14 * 60 + 59;
+  const el = document.getElementById('timer');
+  setInterval(() => {
+    if (secs <= 0) secs = 14 * 60 + 59;
+    secs--;
+    el.textContent = String(Math.floor(secs/60)).padStart(2,'0') + ':' + String(secs%60).padStart(2,'0');
+  }, 1000);
+
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => item.classList.toggle('open'));
   });
-});
 </script>
 
 </body>
