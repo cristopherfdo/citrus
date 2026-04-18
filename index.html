@@ -6,7 +6,7 @@
 <title>Metabolic Type Quiz — Asleep or Blocked?</title>
 <meta name="google" content="notranslate">
 <meta name="description" content="Take this 30-second Metabolic Type Quiz to discover why healthy diets haven't worked for you.">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,700;0,800;1,700;1,800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
    DESIGN: Warm editorial authority — feels like a legit health
@@ -14,20 +14,20 @@
    Clean, trustworthy, not "salesy" at all.
    ============================================================ */
 :root {
-  --amber:      #C97200;
-  --amber-soft: #FFF0D6;
-  --amber-mid:  #E8920A;
-  --dark:       #161008;
-  --charcoal:   #1E1810;
-  --text:       #1E1408;
-  --text-mid:   #4A3C28;
-  --text-light: #7A6A52;
-  --cream:      #FFFDF7;
-  --white:      #FFFFFF;
-  --border:     #DDD4BF;
-  --green:      #1E5C38;
-  --green-soft: #E4F2EB;
-  --shadow-amber: rgba(201,114,0,0.22);
+  --amber:      #FF6B1A;
+  --amber-soft: rgba(255,107,26,0.12);
+  --amber-mid:  #F5A623;
+  --dark:       #0A0705;
+  --charcoal:   #130D08;
+  --text:       #F0E8DC;
+  --text-mid:   #C8B89A;
+  --text-light: #8A7460;
+  --cream:      #1A1008;
+  --white:      #1E1208;
+  --border:     rgba(255,107,26,0.25);
+  --green:      #2ECC71;
+  --green-soft: rgba(46,204,113,0.12);
+  --shadow-amber: rgba(255,107,26,0.35);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -35,8 +35,8 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: 'DM Sans', sans-serif;
-  background: var(--cream);
-  color: var(--text);
+  background: #0A0705;
+  color: #C8B89A;
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -55,6 +55,7 @@ body {
   0%, 100% { box-shadow: 0 6px 22px var(--shadow-amber); }
   50%       { box-shadow: 0 10px 38px rgba(212,131,10,0.38); }
 }
+@keyframes shimmer { 0% { background-position: -200% center; } 100% { background-position: 200% center; } }
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50%       { opacity: 0.4; }
@@ -62,7 +63,7 @@ body {
 
 /* ── TOP STRIP ───────────────────────────── */
 .top-strip {
-  background: var(--amber);
+  background: linear-gradient(90deg, #E85500, #FF6B1A, #F5A623, #FF6B1A, #E85500); background-size: 300% 100%; animation: shimmer 4s linear infinite;
   text-align: center;
   padding: 9px 20px;
   font-size: 12px;
@@ -75,15 +76,15 @@ body {
 
 /* ── HEADER ──────────────────────────────── */
 header {
-  background: var(--white);
-  border-bottom: 1px solid var(--border);
+  background: rgba(10,7,5,0.97);
+  border-bottom: 1px solid rgba(255,107,26,0.2);
   padding: 14px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .header-logo {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Cormorant Garamond', sans-serif;
   font-size: 22px;
   letter-spacing: 2px;
   color: var(--dark);
@@ -99,8 +100,8 @@ header {
 
 /* ── PROGRESS ────────────────────────────── */
 .progress-bar-wrap {
-  background: var(--white);
-  border-bottom: 1px solid var(--border);
+  background: #130D08;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
   padding: 10px 24px;
 }
 .progress-meta {
@@ -114,9 +115,9 @@ header {
   margin-bottom: 6px;
 }
 .progress-track {
-  background: var(--border);
+  background: #2A1D10;
   border-radius: 99px;
-  height: 4px;
+  height: 3px;
   overflow: hidden;
 }
 .progress-fill {
@@ -167,7 +168,7 @@ header {
 }
 
 .hook-h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: clamp(28px, 7vw, 46px);
   line-height: 1.12;
   color: var(--dark);
@@ -182,9 +183,9 @@ header {
 .hook-sub {
   font-size: 18px;
   line-height: 1.75;
-  color: var(--text);
+  color: #C8B89A;
   margin-bottom: 32px;
-  border-left: 4px solid var(--amber-mid);
+  border-left: 3px solid #FF6B1A;
   padding-left: 18px;
 }
 .hook-sub strong { color: var(--dark); }
@@ -205,7 +206,7 @@ header {
 }
 .type-card-icon { font-size: 32px; margin-bottom: 8px; }
 .type-card-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 16px;
   font-weight: 700;
   color: var(--dark);
@@ -274,7 +275,7 @@ header {
   margin-bottom: 10px;
 }
 .q-h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: clamp(22px, 5.5vw, 34px);
   font-weight: 800;
   line-height: 1.18;
@@ -292,9 +293,9 @@ header {
   display: flex;
   align-items: center;
   gap: 16px;
-  background: var(--white);
-  border: 1.5px solid var(--border);
-  border-radius: 13px;
+  background: #130D08;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
   padding: 16px 20px;
   cursor: pointer;
   transition: all 0.18s ease;
@@ -321,8 +322,8 @@ header {
 .opt-letter {
   width: 32px; height: 32px;
   border-radius: 50%;
-  background: var(--border);
-  color: var(--text-mid);
+  background: #2A1D10;
+  color: #8A7460;
   font-size: 14px;
   font-weight: 700;
   display: flex; align-items: center; justify-content: center;
@@ -365,7 +366,7 @@ header {
    ══════════════════════════════════════════ */
 .loading-center { text-align: center; padding: 10px 0 30px; }
 .loading-h { 
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 26px;
   font-weight: 800;
   color: var(--dark);
@@ -383,11 +384,11 @@ header {
   display: flex;
   align-items: center;
   gap: 14px;
-  background: var(--white);
-  border: 1.5px solid var(--border);
-  border-radius: 12px;
+  background: #130D08;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 10px;
   padding: 14px 18px;
-  opacity: 0.38;
+  opacity: 0.3;
   transition: all 0.4s ease;
 }
 .load-step.ls-active {
@@ -432,7 +433,7 @@ header {
 
 /* Result header banner */
 .result-banner {
-  background: linear-gradient(135deg, #161008, #2A1C08);
+  background: linear-gradient(135deg, #130D08, #2A1D10);
   border-radius: 16px;
   padding: 26px 24px;
   margin-bottom: 22px;
@@ -457,7 +458,7 @@ header {
   margin-bottom: 8px;
 }
 .rb-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: clamp(22px, 5.5vw, 32px);
   font-weight: 700;
   color: #fff;
@@ -473,14 +474,14 @@ header {
 
 /* What is blocked metabolism */
 .explain-block {
-  background: var(--white);
-  border: 1.5px solid var(--border);
-  border-radius: 16px;
+  background: #130D08;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px;
   padding: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 .eb-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 20px;
   font-weight: 700;
   color: var(--dark);
@@ -489,7 +490,7 @@ header {
 .eb-text {
   font-size: 16px;
   line-height: 1.85;
-  color: var(--text);
+  color: #C8B89A;
   margin-bottom: 14px;
 }
 .eb-text:last-child { margin-bottom: 0; }
@@ -533,11 +534,11 @@ header {
 
 /* The recommendation */
 .recommendation {
-  background: var(--white);
-  border: 1.5px solid var(--border);
-  border-radius: 16px;
+  background: #130D08;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px;
   padding: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 .rec-label {
   font-size: 11px;
@@ -558,7 +559,7 @@ header {
   flex-shrink: 0;
 }
 .rec-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 19px;
   font-weight: 700;
   color: var(--dark);
@@ -568,7 +569,7 @@ header {
 .rec-text {
   font-size: 16px;
   line-height: 1.8;
-  color: var(--text);
+  color: #C8B89A;
   margin-bottom: 14px;
 }
 .rec-points { display: flex; flex-direction: column; gap: 10px; }
@@ -578,7 +579,7 @@ header {
   gap: 10px;
   font-size: 16px;
   font-weight: 500;
-  color: var(--text);
+  color: #C8B89A;
   line-height: 1.55;
 }
 .rec-point-icon {
@@ -595,7 +596,7 @@ header {
 
 /* Testimonial */
 .testimonial {
-  background: var(--cream);
+  background: #0A0705;
   border: 1.5px solid var(--border);
   border-radius: 16px;
   padding: 20px 22px;
@@ -603,7 +604,7 @@ header {
   position: relative;
 }
 .t-quote-mark {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 64px;
   line-height: 0.5;
   color: var(--border);
@@ -612,7 +613,7 @@ header {
 }
 .t-stars { color: #D4830A; font-size: 15px; letter-spacing: 1px; margin-bottom: 10px; }
 .t-body {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 17px;
   font-style: italic;
   color: var(--dark);
@@ -668,7 +669,7 @@ header {
   position: relative; z-index: 1;
 }
 .cta-h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: clamp(20px, 5vw, 28px);
   font-weight: 700;
   color: #fff;
@@ -700,7 +701,8 @@ header {
   position: relative; z-index: 1;
 }
 .cta-btn:hover {
-  background: var(--charcoal);
+  background: #130D08;
+  border-top: 1px solid rgba(255,255,255,0.06);
   transform: translateY(-2px);
   box-shadow: 0 10px 32px rgba(0,0,0,0.3);
 }
@@ -722,7 +724,8 @@ header {
 
 /* ── FOOTER ──────────────────────────────── */
 footer {
-  background: var(--charcoal);
+  background: #130D08;
+  border-top: 1px solid rgba(255,255,255,0.06);
   text-align: center;
   padding: 24px 20px;
   font-size: 11px;
@@ -735,9 +738,9 @@ footer a { color: #666; text-decoration: none; }
 
 /* ── PAIN LIST ───────────────────────────── */
 .pain-list {
-  background: var(--white);
-  border: 1.5px solid var(--border);
-  border-radius: 14px;
+  background: #130D08;
+  border: 1px solid rgba(255,107,26,0.2);
+  border-radius: 12px;
   padding: 18px 22px;
   margin-bottom: 22px;
   display: flex;
@@ -747,7 +750,7 @@ footer a { color: #666; text-decoration: none; }
 .pain-item {
   font-size: 16px;
   font-weight: 600;
-  color: var(--text);
+  color: #C8B89A;
   line-height: 1.4;
 }
 
