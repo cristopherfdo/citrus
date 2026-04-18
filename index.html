@@ -6,7 +6,7 @@
 <title>Metabolic Type Quiz — Asleep or Blocked?</title>
 <meta name="google" content="notranslate">
 <meta name="description" content="Take this 30-second Metabolic Type Quiz to discover why healthy diets haven't worked for you.">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,700;0,800;1,700;1,800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
    DESIGN: Warm editorial authority — feels like a legit health
@@ -14,20 +14,20 @@
    Clean, trustworthy, not "salesy" at all.
    ============================================================ */
 :root {
-  --amber:      #FF6B1A;
-  --amber-soft: rgba(255,107,26,0.12);
-  --amber-mid:  #F5A623;
-  --dark:       #0A0705;
-  --charcoal:   #130D08;
-  --text:       #F0E8DC;
-  --text-mid:   #C8B89A;
-  --text-light: #8A7460;
-  --cream:      #1A1008;
-  --white:      #1E1208;
-  --border:     rgba(255,107,26,0.25);
-  --green:      #2ECC71;
-  --green-soft: rgba(46,204,113,0.12);
-  --shadow-amber: rgba(255,107,26,0.35);
+  --amber:      #E05C00;
+  --amber-soft: #FFF3E8;
+  --amber-mid:  #F07820;
+  --dark:       #1A1A1A;
+  --charcoal:   #2D2D2D;
+  --text:       #1A1A1A;
+  --text-mid:   #444444;
+  --text-light: #777777;
+  --cream:      #F8FAF5;
+  --white:      #FFFFFF;
+  --border:     #D8E8D0;
+  --green:      #2E7D32;
+  --green-soft: #EBF5EB;
+  --shadow-amber: rgba(224,92,0,0.22);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -35,8 +35,8 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: 'DM Sans', sans-serif;
-  background: #0A0705;
-  color: #C8B89A;
+  background: #F8FAF5;
+  color: var(--text);
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -63,7 +63,9 @@ body {
 
 /* ── TOP STRIP ───────────────────────────── */
 .top-strip {
-  background: linear-gradient(90deg, #E85500, #FF6B1A, #F5A623, #FF6B1A, #E85500); background-size: 300% 100%; animation: shimmer 4s linear infinite;
+  background: linear-gradient(90deg, #B86400, #E8920A, #F5A623, #E8920A, #B86400);
+  background-size: 300% 100%;
+  animation: shimmer 4s linear infinite;
   text-align: center;
   padding: 9px 20px;
   font-size: 12px;
@@ -76,15 +78,15 @@ body {
 
 /* ── HEADER ──────────────────────────────── */
 header {
-  background: rgba(10,7,5,0.97);
-  border-bottom: 1px solid rgba(255,107,26,0.2);
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
   padding: 14px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .header-logo {
-  font-family: 'Cormorant Garamond', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 22px;
   letter-spacing: 2px;
   color: var(--dark);
@@ -100,8 +102,8 @@ header {
 
 /* ── PROGRESS ────────────────────────────── */
 .progress-bar-wrap {
-  background: #130D08;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
   padding: 10px 24px;
 }
 .progress-meta {
@@ -115,14 +117,14 @@ header {
   margin-bottom: 6px;
 }
 .progress-track {
-  background: #2A1D10;
+  background: var(--border);
   border-radius: 99px;
-  height: 3px;
+  height: 4px;
   overflow: hidden;
 }
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #C97200, #E8920A, #F5A623);
+  background: linear-gradient(90deg, #2E7D32, #4CAF50, #F07820);
   border-radius: 99px;
   width: 0%;
   transition: width 0.55s cubic-bezier(0.4, 0, 0.2, 1);
@@ -149,7 +151,7 @@ header {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  background: var(--amber-soft);
+  background: var(--green-soft);
   border: 1.5px solid #D4920A;
   color: var(--amber);
   font-size: 11px;
@@ -168,7 +170,7 @@ header {
 }
 
 .hook-h1 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-size: clamp(28px, 7vw, 46px);
   line-height: 1.12;
   color: var(--dark);
@@ -183,9 +185,9 @@ header {
 .hook-sub {
   font-size: 18px;
   line-height: 1.75;
-  color: #C8B89A;
+  color: var(--text);
   margin-bottom: 32px;
-  border-left: 3px solid #FF6B1A;
+  border-left: 4px solid #2E7D32;
   padding-left: 18px;
 }
 .hook-sub strong { color: var(--dark); }
@@ -206,7 +208,7 @@ header {
 }
 .type-card-icon { font-size: 32px; margin-bottom: 8px; }
 .type-card-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 16px;
   font-weight: 700;
   color: var(--dark);
@@ -221,7 +223,7 @@ header {
 
 .cta-start {
   width: 100%;
-  background: linear-gradient(135deg, #C97200, #E8920A);
+  background: linear-gradient(135deg, #D94F00, #F07820);
   color: #fff;
   font-family: 'DM Sans', sans-serif;
   font-size: 18px;
@@ -235,7 +237,7 @@ header {
   animation: pulse 2.6s ease-in-out infinite;
 }
 .cta-start:hover {
-  background: linear-gradient(135deg, #A85E00, #C97200);
+  background: linear-gradient(135deg, #B84000, #D94F00);
   transform: translateY(-2px);
 }
 .cta-start-sub {
@@ -275,7 +277,7 @@ header {
   margin-bottom: 10px;
 }
 .q-h2 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-size: clamp(22px, 5.5vw, 34px);
   font-weight: 800;
   line-height: 1.18;
@@ -293,9 +295,9 @@ header {
   display: flex;
   align-items: center;
   gap: 16px;
-  background: #130D08;
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 12px;
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 13px;
   padding: 16px 20px;
   cursor: pointer;
   transition: all 0.18s ease;
@@ -308,12 +310,12 @@ header {
   content: '';
   position: absolute;
   inset: 0;
-  background: var(--amber-soft);
+  background: var(--green-soft);
   opacity: 0;
   transition: opacity 0.18s ease;
 }
 .opt:hover {
-  border-color: var(--amber);
+  border-color: #2E7D32;
   transform: translateX(5px);
 }
 .opt:hover::after { opacity: 1; }
@@ -322,8 +324,8 @@ header {
 .opt-letter {
   width: 32px; height: 32px;
   border-radius: 50%;
-  background: #2A1D10;
-  color: #8A7460;
+  background: var(--border);
+  color: var(--text-mid);
   font-size: 14px;
   font-weight: 700;
   display: flex; align-items: center; justify-content: center;
@@ -332,7 +334,7 @@ header {
   position: relative; z-index: 1;
 }
 .opt:hover .opt-letter {
-  background: var(--amber);
+  background: #2E7D32;
   color: #fff;
 }
 .opt-text {
@@ -352,7 +354,7 @@ header {
 
 /* Selected state */
 .opt.selected {
-  border-color: var(--amber);
+  border-color: #2E7D32;
   transform: translateX(5px);
 }
 .opt.selected::after { opacity: 1; }
@@ -366,7 +368,7 @@ header {
    ══════════════════════════════════════════ */
 .loading-center { text-align: center; padding: 10px 0 30px; }
 .loading-h { 
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 26px;
   font-weight: 800;
   color: var(--dark);
@@ -384,11 +386,11 @@ header {
   display: flex;
   align-items: center;
   gap: 14px;
-  background: #130D08;
-  border: 1px solid rgba(255,255,255,0.07);
-  border-radius: 10px;
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
   padding: 14px 18px;
-  opacity: 0.3;
+  opacity: 0.38;
   transition: all 0.4s ease;
 }
 .load-step.ls-active {
@@ -397,8 +399,8 @@ header {
 }
 .load-step.ls-done {
   opacity: 1;
-  border-color: var(--green);
-  background: var(--green-soft);
+  border-color: #2E7D32;
+  background: #EBF5EB;
 }
 .ls-icon { font-size: 20px; flex-shrink: 0; }
 .ls-text { flex: 1; }
@@ -433,7 +435,7 @@ header {
 
 /* Result header banner */
 .result-banner {
-  background: linear-gradient(135deg, #130D08, #2A1D10);
+  background: linear-gradient(135deg, #1B3A1C, #2E5E2F);
   border-radius: 16px;
   padding: 26px 24px;
   margin-bottom: 22px;
@@ -458,7 +460,7 @@ header {
   margin-bottom: 8px;
 }
 .rb-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-size: clamp(22px, 5.5vw, 32px);
   font-weight: 700;
   color: #fff;
@@ -474,14 +476,14 @@ header {
 
 /* What is blocked metabolism */
 .explain-block {
-  background: #130D08;
-  border: 1px solid rgba(255,255,255,0.07);
-  border-radius: 12px;
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 16px;
   padding: 22px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 .eb-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 20px;
   font-weight: 700;
   color: var(--dark);
@@ -490,7 +492,7 @@ header {
 .eb-text {
   font-size: 16px;
   line-height: 1.85;
-  color: #C8B89A;
+  color: var(--text);
   margin-bottom: 14px;
 }
 .eb-text:last-child { margin-bottom: 0; }
@@ -534,11 +536,11 @@ header {
 
 /* The recommendation */
 .recommendation {
-  background: #130D08;
-  border: 1px solid rgba(255,255,255,0.07);
-  border-radius: 12px;
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 16px;
   padding: 22px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 .rec-label {
   font-size: 11px;
@@ -559,7 +561,7 @@ header {
   flex-shrink: 0;
 }
 .rec-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 19px;
   font-weight: 700;
   color: var(--dark);
@@ -569,7 +571,7 @@ header {
 .rec-text {
   font-size: 16px;
   line-height: 1.8;
-  color: #C8B89A;
+  color: var(--text);
   margin-bottom: 14px;
 }
 .rec-points { display: flex; flex-direction: column; gap: 10px; }
@@ -579,7 +581,7 @@ header {
   gap: 10px;
   font-size: 16px;
   font-weight: 500;
-  color: #C8B89A;
+  color: var(--text);
   line-height: 1.55;
 }
 .rec-point-icon {
@@ -596,7 +598,7 @@ header {
 
 /* Testimonial */
 .testimonial {
-  background: #0A0705;
+  background: var(--cream);
   border: 1.5px solid var(--border);
   border-radius: 16px;
   padding: 20px 22px;
@@ -604,7 +606,7 @@ header {
   position: relative;
 }
 .t-quote-mark {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 64px;
   line-height: 0.5;
   color: var(--border);
@@ -613,7 +615,7 @@ header {
 }
 .t-stars { color: #D4830A; font-size: 15px; letter-spacing: 1px; margin-bottom: 10px; }
 .t-body {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 17px;
   font-style: italic;
   color: var(--dark);
@@ -634,7 +636,7 @@ header {
 
 /* ── CTA BLOCK ───────────────────────────── */
 .cta-block {
-  background: linear-gradient(135deg, #C97200, #E8920A);
+  background: linear-gradient(135deg, #D94F00, #F07820);
   border-radius: 18px;
   padding: 28px 24px;
   text-align: center;
@@ -669,7 +671,7 @@ header {
   position: relative; z-index: 1;
 }
 .cta-h2 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-size: clamp(20px, 5vw, 28px);
   font-weight: 700;
   color: #fff;
@@ -686,7 +688,7 @@ header {
 }
 .cta-btn {
   display: block;
-  background: var(--dark);
+  background: #D94F00;
   color: #fff;
   font-size: 17px;
   font-weight: 700;
@@ -701,8 +703,7 @@ header {
   position: relative; z-index: 1;
 }
 .cta-btn:hover {
-  background: #130D08;
-  border-top: 1px solid rgba(255,255,255,0.06);
+  background: #B84000;
   transform: translateY(-2px);
   box-shadow: 0 10px 32px rgba(0,0,0,0.3);
 }
@@ -724,23 +725,22 @@ header {
 
 /* ── FOOTER ──────────────────────────────── */
 footer {
-  background: #130D08;
-  border-top: 1px solid rgba(255,255,255,0.06);
+  background: var(--charcoal);
   text-align: center;
   padding: 24px 20px;
   font-size: 11px;
   color: #555;
   line-height: 1.9;
 }
-footer a { color: #666; text-decoration: none; }
+footer a { color: #2E7D32; text-decoration: none; }
 
 
 
 /* ── PAIN LIST ───────────────────────────── */
 .pain-list {
-  background: #130D08;
-  border: 1px solid rgba(255,107,26,0.2);
-  border-radius: 12px;
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
   padding: 18px 22px;
   margin-bottom: 22px;
   display: flex;
@@ -750,7 +750,7 @@ footer a { color: #666; text-decoration: none; }
 .pain-item {
   font-size: 16px;
   font-weight: 600;
-  color: #C8B89A;
+  color: var(--text);
   line-height: 1.4;
 }
 
