@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>It's Not Your Fault You Can't Lose Weight — Your Fat-Burning System Was Switched Off | Health Daily Report</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,700;1,8..60,400&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --black:#111;
+  --text:#1a1a1a;
+  --text2:#444;
+  --text3:#767676;
+  --border:#e2e2e2;
+  --bg:#ffffff;
+  --red:#bb0000;
+  --accent:#326891;
+  --light:#f7f7f5;
+  --gold:#c8952a;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Source Serif 4',Georgia,serif;
+  background:var(--bg);color:var(--text);
+  font-size:18px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  padding-bottom:64px;
+}
+#prog{position:fixed;top:0;left:0;height:2px;width:0%;background:var(--red);z-index:999;transition:width 0.1s linear}
+
+/* TOPBAR */
+.topbar{background:var(--black);padding:6px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.topbar-sections{display:flex;gap:16px;flex-wrap:wrap}
+.topbar-sections a{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;color:#999;text-decoration:none;letter-spacing:0.06em;text-transform:uppercase;transition:color 0.2s}
+.topbar-sections a:hover,.topbar-sections a.on{color:#fff}
+.topbar-right{font-family:'DM Sans',sans-serif;font-size:11px;color:#666;letter-spacing:0.04em}
+
+/* MASTHEAD */
+.masthead{border-bottom:3px solid var(--black);padding:16px 0 12px;text-align:center;position:sticky;top:0;background:#fff;z-index:200;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.masthead-inner{max-width:1200px;margin:0 auto;padding:0 20px}
+.logo{font-family:'Source Serif 4',Georgia,serif;font-size:clamp(26px,5vw,44px);font-weight:700;color:var(--black);letter-spacing:-0.03em;line-height:1;margin-bottom:10px}
+.logo .dot{color:var(--red)}
+.masthead-rule{width:100%;height:1px;background:var(--border);margin:10px 0 8px}
+.masthead-nav{display:flex;justify-content:center;gap:0;flex-wrap:wrap;list-style:none}
+.masthead-nav a{font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;color:var(--text2);text-decoration:none;padding:4px 14px;border-right:1px solid var(--border);letter-spacing:0.05em;text-transform:uppercase;transition:color 0.2s}
+.masthead-nav li:last-child a{border-right:none}
+.masthead-nav a:hover,.masthead-nav a.on{color:var(--black)}
+
+/* ARTICLE HEADER */
+.article-header{max-width:740px;margin:28px auto 0;padding:0 20px}
+.label-row{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.label-tag{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:var(--red);white-space:nowrap}
+.label-line{flex:1;height:1px;background:var(--border)}
+.article-header h1{font-family:'Source Serif 4',Georgia,serif;font-size:clamp(27px,5vw,46px);font-weight:700;line-height:1.1;color:var(--black);letter-spacing:-0.02em;margin-bottom:16px}
+.article-header h1 em{font-style:italic;color:var(--red)}
+.article-deck{font-family:'Source Serif 4',Georgia,serif;font-size:clamp(17px,2.5vw,20px);font-weight:400;color:var(--text2);line-height:1.55;margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.byline-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+.byline{font-family:'DM Sans',sans-serif;font-size:13px;color:var(--text3);line-height:1.5}
+.byline strong{color:var(--accent);font-weight:600}
+
+.tags{display:flex;gap:6px;flex-wrap:wrap;padding-top:10px;border-top:1px solid var(--border)}
+.tag{font-family:'DM Sans',sans-serif;background:var(--light);border:1px solid var(--border);color:var(--text2);font-size:10px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:3px 8px;border-radius:2px}
+
+/* HERO */
+.hero-figure{max-width:860px;margin:20px auto 0;padding:0 20px}
+.hero-svg-wrap{width:100%;background:linear-gradient(160deg,#0d0d0d 0%,#1a0a05 45%,#0a0a0a 100%);padding:44px 24px 36px;position:relative;overflow:hidden}
+.hero-svg-wrap::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse 55% 60% at 15% 50%, rgba(187,0,0,0.14) 0%, transparent 70%),radial-gradient(ellipse 40% 50% at 85% 30%, rgba(200,149,42,0.07) 0%, transparent 70%)}
+.hero-content{position:relative;z-index:1;max-width:680px;margin:0 auto;text-align:center}
+.hero-kicker{font-family:'DM Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--red);margin-bottom:20px;display:flex;align-items:center;justify-content:center;gap:10px}
+.hero-kicker::before,.hero-kicker::after{content:'';display:block;width:28px;height:1px;background:var(--red);opacity:0.5}
+.hero-stats{display:flex;align-items:stretch;justify-content:center;margin-bottom:28px;flex-wrap:wrap}
+.hero-stat{padding:0 24px;border-right:1px solid rgba(255,255,255,0.1);text-align:center}
+.hero-stat:last-child{border-right:none}
+.hs-num{font-family:'Source Serif 4',Georgia,serif;font-size:clamp(32px,6vw,52px);font-weight:700;color:#fff;line-height:1;display:block}
+.hs-num.red{color:#ff6b6b}
+.hs-label{font-family:'DM Sans',sans-serif;font-size:10px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:6px;line-height:1.4}
+.hero-quote{font-family:'Source Serif 4',Georgia,serif;font-size:clamp(14px,2.2vw,18px);font-style:italic;color:rgba(255,255,255,0.65);line-height:1.6;max-width:520px;margin:0 auto;padding-top:22px;border-top:1px solid rgba(255,255,255,0.08)}
+.hero-quote strong{color:#fff;font-style:normal}
+.hero-caption{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--text3);padding:8px 12px;border-top:1px solid var(--border);font-style:italic;background:var(--light)}
+
+/* BODY LAYOUT */
+.body-layout{max-width:1100px;margin:32px auto 0;padding:0 20px;display:grid;grid-template-columns:1fr 280px;gap:48px;align-items:start}
+@media(max-width:760px){.body-layout{grid-template-columns:1fr}.sidebar{display:none}}
+
+/* ARTICLE BODY */
+.article-body p{font-family:'Source Serif 4',Georgia,serif;font-size:18px;line-height:1.78;color:#1a1a1a;margin-bottom:22px}
+.article-body p strong{font-weight:700;color:var(--black)}
+.article-body h2{font-family:'Source Serif 4',Georgia,serif;font-size:clamp(19px,3vw,25px);font-weight:700;color:var(--black);margin:36px 0 16px;line-height:1.25;letter-spacing:-0.01em;padding-top:28px;border-top:2px solid var(--black)}
+
+/* PULL QUOTE */
+.pullquote{margin:32px 0;padding:28px 0;border-top:3px solid var(--black);border-bottom:1px solid var(--border)}
+.pullquote blockquote{font-family:'Source Serif 4',Georgia,serif;font-size:clamp(19px,3vw,25px);font-style:italic;font-weight:400;color:var(--black);line-height:1.45;margin-bottom:12px}
+.pullquote cite{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--text3);font-style:normal;letter-spacing:0.05em;text-transform:uppercase}
+
+/* INFO BOX */
+.info-box{border:1px solid var(--border);border-top:3px solid var(--black);padding:20px 22px;margin:28px 0;background:var(--light)}
+.info-box-title{font-family:'DM Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--text3);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.info-row{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-bottom:1px solid var(--border);gap:12px}
+.info-row:last-child{border-bottom:none}
+.info-label{font-family:'Source Serif 4',Georgia,serif;font-size:15px;color:var(--text2);flex:1}
+.info-val{font-family:'Source Serif 4',Georgia,serif;font-size:20px;font-weight:700;color:var(--red);white-space:nowrap}
+.info-bar-wrap{width:80px;height:4px;background:#e2e2e2;border-radius:2px;overflow:hidden}
+.info-bar{height:100%;background:var(--red);border-radius:2px;animation:fillbar 1.8s ease forwards;transform-origin:left;transform:scaleX(0)}
+@keyframes fillbar{to{transform:scaleX(1)}}
+
+/* FINDING */
+.finding{border-left:4px solid var(--gold);padding:16px 20px;background:#fffdf5;margin:28px 0;font-family:'Source Serif 4',Georgia,serif;font-size:17px;color:#333;line-height:1.7}
+.finding strong{color:var(--black)}
+
+/* INGREDIENTS */
+.ingredients{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0}
+@media(max-width:500px){.ingredients{grid-template-columns:1fr}}
+.ingredient{border:1px solid var(--border);border-top:3px solid var(--gold);padding:14px 16px;background:var(--bg)}
+.ingredient-name{font-family:'DM Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--black);margin-bottom:6px}
+.ingredient-role{font-family:'DM Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--red);margin-bottom:8px}
+.ingredient-desc{font-family:'Source Serif 4',Georgia,serif;font-size:14px;color:var(--text2);line-height:1.6}
+
+/* CTA BLOCK */
+.cta-block{margin:36px 0;border:1px solid #d0d0d0;border-top:4px solid var(--red);background:#fff;padding:28px 24px;text-align:center;box-shadow:0 4px 24px rgba(0,0,0,0.07)}
+.cta-eyebrow{font-family:'DM Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--text3);margin-bottom:12px}
+.cta-block h3{font-family:'Source Serif 4',Georgia,serif;font-size:clamp(18px,3.5vw,26px);font-weight:700;color:var(--black);line-height:1.25;margin-bottom:10px;letter-spacing:-0.01em}
+.cta-block h3 em{font-style:italic;color:var(--red)}
+.cta-block > p{font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text3);margin-bottom:20px;line-height:1.55}
+.cta-btn{display:inline-block;background:var(--red);color:#fff;font-family:'DM Sans',sans-serif;font-size:16px;font-weight:700;padding:16px 32px;border-radius:3px;text-decoration:none;letter-spacing:0.04em;transition:all 0.2s ease;width:100%;max-width:420px;box-shadow:0 4px 20px rgba(187,0,0,0.25)}
+.cta-btn:hover{background:#960000;transform:translateY(-2px);box-shadow:0 8px 28px rgba(187,0,0,0.35)}
+.cta-btn-sub{display:block;font-size:11px;font-weight:400;opacity:0.75;margin-top:5px}
+.cta-trust{margin-top:14px;font-family:'DM Sans',sans-serif;font-size:11px;color:var(--text3);display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+
+/* TESTIMONIALS */
+.testi-label{font-family:'DM Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--text3);margin:28px 0 14px;display:flex;align-items:center;gap:12px}
+.testi-label::after{content:'';flex:1;height:1px;background:var(--border)}
+.testi{border:1px solid var(--border);padding:18px 20px;margin-bottom:14px;background:var(--light)}
+.testi-stars{color:var(--gold);font-size:13px;letter-spacing:2px;margin-bottom:10px}
+.testi-text{font-family:'Source Serif 4',Georgia,serif;font-size:16px;font-style:italic;color:#333;line-height:1.7;margin-bottom:12px}
+.testi-byline{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--text3);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.testi-byline strong{color:var(--text);font-size:13px}
+.verified{display:inline-flex;align-items:center;gap:3px;background:#e8f4e8;color:#2d7a2d;font-size:10px;font-weight:700;letter-spacing:0.06em;padding:2px 7px;border-radius:2px}
+
+/* SIDEBAR */
+.sidebar-section{border-top:3px solid var(--black);padding-top:16px;margin-bottom:28px}
+.sidebar-title{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--text3);margin-bottom:14px}
+.sidebar-stat-big{text-align:center;padding:18px 0;border-bottom:1px solid var(--border);margin-bottom:4px}
+.sidebar-stat-big:last-child{border-bottom:none;margin-bottom:0}
+.ssb-num{font-family:'Source Serif 4',Georgia,serif;font-size:48px;font-weight:700;color:var(--red);line-height:1;display:block}
+.ssb-label{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--text2);line-height:1.4;margin-top:6px}
+.sidebar-cta-box{border:1px solid var(--border);border-top:3px solid var(--red);padding:18px 16px;text-align:center;margin-bottom:28px;background:#fff}
+.sidebar-cta-box p{font-family:'Source Serif 4',Georgia,serif;font-size:15px;font-weight:700;color:var(--black);line-height:1.4;margin-bottom:14px}
+.sidebar-cta-box a{display:block;background:var(--red);color:#fff;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;padding:12px 14px;text-decoration:none;letter-spacing:0.04em;transition:background 0.2s}
+.sidebar-cta-box a:hover{background:#960000}
+.related-item{display:flex;gap:10px;padding:12px 0;border-bottom:1px solid var(--border)}
+.related-item:last-child{border-bottom:none}
+.related-num{font-family:'Source Serif 4',Georgia,serif;font-size:26px;font-weight:700;color:var(--border);flex-shrink:0;line-height:1}
+.related-cat{font-family:'DM Sans',sans-serif;font-size:10px;font-weight:700;color:var(--red);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:4px}
+.related-text{font-family:'Source Serif 4',Georgia,serif;font-size:14px;font-weight:600;color:var(--text);line-height:1.4}
+
+/* STICKY */
+.sticky{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:3px solid var(--red);padding:10px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px;z-index:300;box-shadow:0 -4px 20px rgba(0,0,0,0.1);transition:transform 0.3s ease}
+.sticky.hidden{transform:translateY(100%)}
+.sticky-left{flex:1;min-width:0}
+.sticky-kicker{font-family:'DM Sans',sans-serif;font-size:9px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--red);margin-bottom:2px}
+.sticky-text{font-family:'Source Serif 4',Georgia,serif;font-size:14px;font-weight:600;color:var(--black);line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sticky-btn{flex-shrink:0;background:var(--red);color:#fff;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;padding:12px 20px;text-decoration:none;letter-spacing:0.04em;transition:background 0.2s;white-space:nowrap}
+.sticky-btn:hover{background:#960000}
+
+/* FOOTER */
+.footer{background:var(--black);padding:28px 20px;margin-top:48px;text-align:center}
+.footer-logo{font-family:'Source Serif 4',Georgia,serif;font-size:18px;font-weight:700;color:#888;margin-bottom:10px}
+.footer-logo .dot{color:var(--red)}
+.footer-links{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:12px}
+.footer-links a{font-family:'DM Sans',sans-serif;font-size:11px;color:#555;text-decoration:none;letter-spacing:0.06em;text-transform:uppercase}
+.footer-links a:hover{color:#888}
+.footer-disc{font-family:'DM Sans',sans-serif;font-size:10px;color:#3a3a3a;max-width:580px;margin:0 auto;line-height:1.9}
+
+/* ── MOBILE OPTIMIZATIONS ── */
+@media(max-width:600px){
+
+  /* Topbar: hide sections, show only date */
+  .topbar-sections{display:none}
+  .topbar-right{font-size:10px;color:#888;width:100%;text-align:center}
+
+  /* Masthead: smaller logo, hide nav */
+  .masthead{padding:10px 0 8px}
+  .logo{font-size:22px;margin-bottom:0}
+  .masthead-rule{margin:8px 0 0}
+  .masthead-nav{display:none}
+
+  /* Article header */
+  .article-header{padding:0 16px;margin-top:18px}
+  .article-header h1{font-size:26px;line-height:1.15;margin-bottom:12px}
+  .article-deck{font-size:16px;margin-bottom:12px}
+  .byline{font-size:12px}
+  .share-row{display:none}
+  .tags{gap:4px}
+  .tag{font-size:9px;padding:2px 6px}
+
+  /* Hero stats — stack vertically */
+  .hero-figure{padding:0 12px;margin-top:14px}
+  .hero-svg-wrap{padding:28px 16px 24px}
+  .hero-stats{flex-direction:row;gap:0;margin-bottom:20px}
+  .hero-stat{padding:0 10px;border-right:1px solid rgba(255,255,255,0.1)}
+  .hero-stat:last-child{border-right:none}
+  .hs-num{font-size:28px}
+  .hs-label{font-size:9px}
+  .hero-kicker{font-size:9px;margin-bottom:14px}
+  .hero-quote{font-size:13px;padding-top:16px}
+
+  /* Body */
+  .body-layout{padding:0 16px;margin-top:20px;gap:0}
+  .article-body p{font-size:17px;line-height:1.72;margin-bottom:18px}
+  .article-body h2{font-size:20px;margin:28px 0 12px;padding-top:22px}
+
+  /* Pull quote */
+  .pullquote{margin:24px 0;padding:20px 0}
+  .pullquote blockquote{font-size:19px}
+
+  /* Info box */
+  .info-box{padding:16px}
+  .info-label{font-size:13px}
+  .info-val{font-size:17px}
+  .info-bar-wrap{width:60px}
+
+  /* Ingredients grid — single column */
+  .ingredients{grid-template-columns:1fr}
+  .ingredient{padding:12px 14px}
+
+  /* CTA block */
+  .cta-block{padding:22px 16px;margin:28px 0}
+  .cta-block h3{font-size:19px}
+  .cta-btn{font-size:17px;padding:18px 20px}
+  .cta-trust{gap:6px;font-size:10px}
+
+  /* Testimonials */
+  .testi{padding:14px 16px}
+  .testi-text{font-size:15px}
+
+  /* Sticky */
+  .sticky{padding:10px 14px;gap:10px}
+  .sticky-kicker{font-size:8px}
+  .sticky-text{font-size:12px}
+  .sticky-btn{padding:13px 16px;font-size:13px}
+
+  /* Footer */
+  .footer{padding:20px 16px}
+  .footer-links{gap:10px}
+}
+</style>
+</head>
+<body>
+
+<!-- Meta Pixel — deferred -->
+<script>
+window.addEventListener('load',function(){
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2145608612901233');
+fbq('track','PageView');
+});
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2145608612901233&ev=PageView&noscript=1"/></noscript>
+
+<div id="prog"></div>
+
+<!-- Topbar -->
+<div class="topbar">
+  <div class="topbar-sections">
+    <a href="#" class="on">Health</a>
+    <a href="#">Women's Wellness</a>
+    <a href="#">Metabolism</a>
+    <a href="#">Nutrition</a>
+    <a href="#">Research</a>
+  </div>
+  <div class="topbar-right" id="tdate"></div>
+</div>
+
+<!-- Masthead -->
+<div class="masthead">
+  <div class="masthead-inner">
+    <div class="logo">Health Daily<span class="dot">.</span>Report</div>
+    <div class="masthead-rule"></div>
+    <ul class="masthead-nav">
+      <li><a href="#" class="on">Women's Health</a></li>
+      <li><a href="#">Metabolism</a></li>
+      <li><a href="#">Weight Loss</a></li>
+      <li><a href="#">Research</a></li>
+      <li><a href="#">Supplements</a></li>
+      <li><a href="#">Experts</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Article Header -->
+<div class="article-header">
+  <div class="label-row">
+    <div class="label-tag">⚡ Health Investigation</div>
+    <div class="label-line"></div>
+  </div>
+
+  <h1>It's Not Your Fault You Can't Lose Weight — <em>Your Fat-Burning System Was Switched Off</em></h1>
+
+  <p class="article-deck">You didn't fail the diet. The diet failed you. After 38, a hidden metabolic condition silently shuts down your body's ability to burn fat — and no amount of willpower can override it.</p>
+
+  <div class="byline-row">
+    <div class="byline">
+      By <strong>Sarah Mitchell</strong> &nbsp;·&nbsp; Metabolic Health Correspondent &nbsp;·&nbsp; <span id="adate"></span><br>
+      <span style="font-size:11px">6 min read &nbsp;·&nbsp; Reviewed by our editorial health board</span>
+    </div>
+
+  </div>
+  <div class="tags">
+    <span class="tag">Thermogenesis</span>
+    <span class="tag">Women's Metabolism</span>
+    <span class="tag">Seville Orange</span>
+    <span class="tag">Weight Loss Research</span>
+  </div>
+</div>
+
+<!-- Hero -->
+<div class="hero-figure">
+  <div class="hero-svg-wrap">
+    <div class="hero-content">
+      <div class="hero-kicker">Harvard & Barcelona Research — 2025</div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hs-num red">74%</span>
+          <div class="hs-label">Thermogenesis boost<br>from citrus compound</div>
+        </div>
+        <div class="hero-stat">
+          <span class="hs-num">87%</span>
+          <div class="hs-label">Regain weight after<br>standard dieting</div>
+        </div>
+        <div class="hero-stat">
+          <span class="hs-num red">35+</span>
+          <div class="hs-label">Age when thermogenic<br>resistance begins</div>
+        </div>
+      </div>
+      <div class="hero-quote">
+        <strong>"The metabolism doesn't just slow down — it stops receiving the signal to burn fat at all.</strong> Eating less doesn't fix that. It makes it worse."
+      </div>
+    </div>
+  </div>
+  <div class="hero-caption">Data from peer-reviewed metabolic research, Harvard Medical School & University of Barcelona, 2025. Graphic: Health Daily Report</div>
+</div>
+
+<!-- Body -->
+<div class="body-layout">
+<div class="article-body">
+
+<!-- ── HOOK ── -->
+<p>You've counted calories. Cut carbs. Skipped meals. Pushed yourself at the gym until you had nothing left. And every single morning you step on that scale hoping — <strong>and nothing changes.</strong></p>
+
+<p>You're not imagining it. You're not lazy. You're not making excuses. <strong>Something inside your body actually stopped working.</strong> And until you fix that one thing, nothing else will.</p>
+
+<!-- ── PROBLEMA / URGENCIA ── -->
+<h2>Why This Happens After 38</h2>
+
+<p>After 38, your hormones shift. Estrogen drops. Cortisol rises. And those changes directly shut down your thermogenic system — the one responsible for burning fat.</p>
+
+<p>Think of it like a furnace losing its ignition. <strong>The fuel is there. Your effort is there. But the spark no longer fires.</strong></p>
+
+<p>That's why the scale stopped moving. Not because of you. Because of biology.</p>
+
+<div class="pullquote">
+  <blockquote>"These women aren't failing at dieting. Their fat-burning furnace has shut down. Eating less doesn't relight it — it makes the body hold on to fat even tighter."</blockquote>
+  <cite>— Dr. Michael Reeves, Metabolic Research Institute, Dallas TX</cite>
+</div>
+
+<p>And here's what makes it worse: <strong>the harder you diet, the deeper the problem gets.</strong> Calorie restriction signals starvation — so your body shuts down fat burning even further to survive. Every diet you've tried hasn't just failed. It's been working against you.</p>
+
+<!-- ── SOLUCIÓN ── -->
+<h2>The Supplement Taking the U.S. by Storm — And Scientists Are Finally Explaining Why It Works</h2>
+
+<p>While most supplements target symptoms, there's one formula that targets the source: it reignites thermogenesis using a clinically-studied citrus compound that reactivates your body's fat-burning furnace from within. <strong>No stimulants. No restriction. No willpower required.</strong></p>
+
+<p>It's built around <strong>p-Synephrine</strong> — extracted from Seville Orange Peel — clinically shown to amplify thermogenesis by up to 74%. Combined with Green Tea EGCG, Himalayan Ginger, Red Pepper, and Berberine, it works across every metabolic pathway simultaneously. <strong>Seven botanicals. One switch turned back on.</strong></p>
+
+<p>It's the formula thousands of American women over 38 are quietly calling the first thing that actually worked — and scientists are finally explaining why.</p>
+
+<div class="cta-block">
+  <div class="cta-eyebrow">🔥 The Formula Thousands Are Talking About</div>
+  <h3>See Why <em>340,000 Women</em> Are Calling This the First Thing That Actually Worked</h3>
+  <p>Free video. No email. No purchase needed. Takes 3 minutes.</p>
+  <a class="cta-btn"
+     href="https://hop.clickbank.net/?affiliate=criscorr34&vendor=citrusburn&tid=ADVERTORIAL_V3"
+     target="_blank"
+     onclick="fbq('track','InitiateCheckout');">
+    See Why 340,000 Women Are Talking About This →
+    <span class="cta-btn-sub">Free · Private · No credit card · 180-day guarantee</span>
+  </a>
+  <div class="cta-trust">
+    <span>🔒 Secure</span>
+    <span>·&nbsp; Stimulant-free</span>
+    <span>·&nbsp; Results may vary</span>
+  </div>
+</div>
+
+<!-- ── BENEFICIOS ── -->
+<h2>What Happens When Your Metabolism Switches Back On</h2>
+
+<div class="testi-label">Women Reporting These Changes</div>
+
+<div class="testi">
+  <div class="testi-stars">★★★★★</div>
+  <p class="testi-text">"I've tried every diet for 4 years. Nothing moved. In the last 3 weeks I've seen more progress than in those entire 4 years combined. Something clearly switched on inside me."</p>
+  <div class="testi-byline">
+    <strong>Patricia W., 51</strong><span>Nashville, TN</span>
+    <span class="verified">✓ Verified Purchase</span>
+  </div>
+</div>
+
+<div class="testi">
+  <div class="testi-stars">★★★★★</div>
+  <p class="testi-text">"My clothes fit differently after week two. My cravings just stopped. The constant battle in my head went quiet. I hadn't felt that peace around food in years."</p>
+  <div class="testi-byline">
+    <strong>Sandra M., 47</strong><span>Austin, TX</span>
+    <span class="verified">✓ Verified Purchase</span>
+  </div>
+</div>
+
+<div class="testi">
+  <div class="testi-stars">★★★★★</div>
+  <p class="testi-text">"I used to wake up exhausted and go to bed exhausted. Two weeks in and I have energy I haven't felt in years. The mirror is starting to look like someone I recognize again."</p>
+  <div class="testi-byline">
+    <strong>Diane K., 44</strong><span>Phoenix, AZ</span>
+    <span class="verified">✓ Verified Purchase</span>
+  </div>
+</div>
+
+<div class="testi">
+  <div class="testi-stars">★★★★★</div>
+  <p class="testi-text">"I was skeptical. I've been burned before. But this feels different — quiet, not dramatic. Like my body is finally doing what it's supposed to do. I stopped obsessing over food. That alone changed everything."</p>
+  <div class="testi-byline">
+    <strong>Karen L., 52</strong><span>Denver, CO</span>
+    <span class="verified">✓ Verified Purchase</span>
+  </div>
+</div>
+
+<!-- ── CTA ── -->
+<div class="cta-block">
+  <div class="cta-eyebrow">🎥 Free Video — No Email Required</div>
+  <h3>Watch: The Exact Protocol That's <em>Turning the Fat-Burning Switch Back On</em> in Women Over 38</h3>
+  <p>Over 340,000 women have already watched it. Free, private, takes 3 minutes. No purchase needed.</p>
+  <a class="cta-btn"
+     href="https://hop.clickbank.net/?affiliate=criscorr34&vendor=citrusburn&tid=ADVERTORIAL_V3"
+     target="_blank"
+     onclick="fbq('track','InitiateCheckout');">
+    Watch Free Now →
+    <span class="cta-btn-sub">No credit card · No email · 180-day money-back guarantee</span>
+  </a>
+  <div class="cta-trust">
+    <span>🔒 Private & secure</span>
+    <span>·&nbsp; Not medical advice</span>
+    <span>·&nbsp; Results may vary</span>
+  </div>
+</div>
+
+</div><!-- end article-body -->
+
+<!-- Sidebar -->
+<aside class="sidebar">
+
+  <div class="sidebar-cta-box">
+    <p>Why did your metabolism stop burning fat after 38? Free video explains.</p>
+    <a href="https://hop.clickbank.net/?affiliate=criscorr34&vendor=citrusburn&tid=ADVERTORIAL_V3_SIDE"
+       target="_blank" onclick="fbq('track','ViewContent');">
+      Watch Free (3 min) →
+    </a>
+  </div>
+
+  <div class="sidebar-section">
+    <div class="sidebar-title">Key Numbers</div>
+    <div class="sidebar-stat-big">
+      <span class="ssb-num">74%</span>
+      <div class="ssb-label">Thermogenesis increase from Seville Orange p-Synephrine</div>
+    </div>
+    <div class="sidebar-stat-big">
+      <span class="ssb-num">87%</span>
+      <div class="ssb-label">Women regain all weight within 2 years of standard dieting</div>
+    </div>
+    <div class="sidebar-stat-big">
+      <span class="ssb-num">180</span>
+      <div class="ssb-label">Day money-back guarantee on CitrusBurn</div>
+    </div>
+  </div>
+
+  <div class="sidebar-section">
+    <div class="sidebar-title">Related Articles</div>
+    <div class="related-item">
+      <div class="related-num">01</div>
+      <div>
+        <div class="related-cat">Metabolism</div>
+        <div class="related-text">Why eating less after 40 makes your body store more fat</div>
+      </div>
+    </div>
+    <div class="related-item">
+      <div class="related-num">02</div>
+      <div>
+        <div class="related-cat">Research</div>
+        <div class="related-text">p-Synephrine and thermogenesis: what the clinical trials show</div>
+      </div>
+    </div>
+    <div class="related-item">
+      <div class="related-num">03</div>
+      <div>
+        <div class="related-cat">Hormones</div>
+        <div class="related-text">Estrogen, cortisol, and the metabolic slowdown no one talks about</div>
+      </div>
+    </div>
+    <div class="related-item">
+      <div class="related-num">04</div>
+      <div>
+        <div class="related-cat">Nutrition</div>
+        <div class="related-text">The Mediterranean botanicals rewriting weight loss science</div>
+      </div>
+    </div>
+  </div>
+
+</aside>
+</div><!-- end body-layout -->
+
+<!-- Sticky -->
+<div class="sticky" id="sticky">
+  <div class="sticky-left">
+    <div class="sticky-kicker">Metabolism Alert</div>
+    <div class="sticky-text">Why your body stopped burning fat after 38 — free video</div>
+  </div>
+  <a class="sticky-btn"
+     href="https://hop.clickbank.net/?affiliate=criscorr34&vendor=citrusburn&tid=ADVERTORIAL_V3_STICKY"
+     target="_blank"
+     onclick="fbq('track','Lead');">
+    Watch Free →
+  </a>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <div class="footer-logo">Health Daily<span class="dot">.</span>Report</div>
+  <div class="footer-links">
+    <a href="#">About</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Use</a>
+    <a href="#">Disclaimer</a>
+    <a href="#">Contact</a>
+  </div>
+  <div class="footer-disc">
+    © 2025 Health Daily Report. This is a sponsored editorial article. The information presented is for educational purposes only and does not constitute medical advice. Individual results will vary. Testimonials reflect personal experiences and are not typical results. Consult your physician before starting any supplement. These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease.
+  </div>
+</div>
+
+<script>
+const now = new Date();
+const opts = {month:'long',day:'numeric',year:'numeric'};
+const short = {month:'short',day:'numeric',year:'numeric'};
+document.getElementById('tdate').textContent = now.toLocaleDateString('en-US',short);
+document.getElementById('adate').textContent = now.toLocaleDateString('en-US',opts);
+
+// Progress bar + sticky hide
+window.addEventListener('scroll',()=>{
+  const h = document.documentElement.scrollHeight - window.innerHeight;
+  if(h>0) document.getElementById('prog').style.width = Math.min((window.scrollY/h)*100,100)+'%';
+  const footer = document.querySelector('.footer');
+  if(footer){
+    document.getElementById('sticky').classList.toggle('hidden',footer.getBoundingClientRect().top < window.innerHeight);
+  }
+});
+
+// Animate bars on scroll
+const obs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.querySelectorAll('.info-bar').forEach(b=>{
+        b.style.animation='none';
+        b.offsetHeight;
+        b.style.animation='fillbar 1.8s ease forwards';
+      });
+    }
+  });
+},{threshold:0.3});
+document.querySelectorAll('.info-box').forEach(b=>obs.observe(b));
+</script>
+</body>
+</html>
