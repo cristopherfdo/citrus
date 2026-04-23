@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CitrusBurn™ — Official Site</title>
+<meta name="robots" content="noindex,nofollow">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel -->
+<script>
+window.addEventListener('load',function(){
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2145608612901233');
+fbq('track','PageView');
+});
+</script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --black:#0F0F0F;
+  --white:#FFFFFF;
+  --cream:#FAF8F4;
+  --red:#CC1A1A;
+  --red-dark:#A01010;
+  --gold:#C8952A;
+  --text:#1A1A1A;
+  --muted:#888;
+  --border:#E8E8E8;
+}
+
+html{scroll-behavior:smooth}
+
+body{
+  font-family:'DM Sans',sans-serif;
+  background:var(--white);
+  color:var(--text);
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* NAV */
+.nav{
+  background:var(--black);
+  padding:14px 24px;
+  text-align:center;
+}
+.nav-logo{
+  font-family:'DM Sans',sans-serif;
+  font-size:18px;
+  font-weight:700;
+  color:#fff;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+}
+.nav-logo span{color:var(--red);}
+
+/* MAIN */
+.main{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:48px 24px 40px;
+  text-align:center;
+  background:var(--white);
+}
+
+/* STARS */
+.stars{
+  color:var(--gold);
+  font-size:22px;
+  letter-spacing:4px;
+  margin-bottom:24px;
+  animation:fadeUp 0.5s ease both;
+}
+
+/* HEADLINE */
+.headline{
+  font-family:'Playfair Display',Georgia,serif;
+  font-size:clamp(26px,5vw,44px);
+  font-weight:900;
+  line-height:1.15;
+  color:var(--black);
+  max-width:560px;
+  margin:0 auto 10px;
+  animation:fadeUp 0.6s 0.1s ease both;
+}
+.headline em{
+  font-style:italic;
+  color:var(--red);
+}
+
+/* SUB */
+.subline{
+  font-size:clamp(15px,2vw,18px);
+  color:var(--muted);
+  margin-bottom:32px;
+  font-weight:400;
+  animation:fadeUp 0.6s 0.15s ease both;
+}
+
+/* PRODUCT IMAGE */
+.product-wrap{
+  position:relative;
+  margin-bottom:32px;
+  animation:fadeUp 0.7s 0.2s ease both;
+}
+.product-img{
+  width:320px;
+  height:auto;
+  display:block;
+  margin:0 auto;
+  filter:drop-shadow(0 20px 40px rgba(0,0,0,0.15));
+}
+.badge-bestseller{
+  position:absolute;
+  top:10px;
+  right:10px;
+  background:var(--gold);
+  color:#fff;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  padding:6px 12px;
+  border-radius:2px;
+}
+
+/* DISCOUNT BADGE */
+.discount-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:#FFF3F3;
+  border:1px solid #FFCCCC;
+  color:var(--red);
+  font-size:13px;
+  font-weight:700;
+  padding:8px 20px;
+  margin-bottom:24px;
+  letter-spacing:0.05em;
+  animation:fadeUp 0.6s 0.25s ease both;
+}
+.discount-dot{
+  width:7px;height:7px;
+  background:var(--red);
+  border-radius:50%;
+  animation:blink 1.5s infinite;
+  flex-shrink:0;
+}
+
+/* CTA BUTTON */
+.cta-wrap{
+  width:100%;
+  max-width:420px;
+  margin:0 auto 16px;
+  animation:fadeUp 0.6s 0.3s ease both;
+}
+.cta-btn{
+  display:block;
+  width:100%;
+  background:var(--red);
+  color:#fff;
+  font-family:'DM Sans',sans-serif;
+  font-size:18px;
+  font-weight:700;
+  padding:20px 32px;
+  text-decoration:none;
+  letter-spacing:0.03em;
+  border-radius:3px;
+  transition:all 0.2s ease;
+  box-shadow:0 8px 32px rgba(204,26,26,0.35);
+  animation:glowPulse 2.5s infinite;
+  position:relative;
+  overflow:hidden;
+}
+.cta-btn::before{
+  content:'';
+  position:absolute;
+  top:0;left:-100%;
+  width:60%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,0.15),transparent);
+  animation:shimmer 3s infinite;
+}
+.cta-btn:hover{
+  background:var(--red-dark);
+  transform:translateY(-2px);
+  box-shadow:0 12px 40px rgba(204,26,26,0.45);
+}
+.cta-sub{
+  font-size:12px;
+  color:var(--muted);
+  margin-top:10px;
+  text-align:center;
+}
+
+/* TRUST BADGES */
+.badges{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:20px;
+  flex-wrap:wrap;
+  margin-top:32px;
+  padding-top:28px;
+  border-top:1px solid var(--border);
+  width:100%;
+  max-width:560px;
+  animation:fadeUp 0.6s 0.4s ease both;
+}
+.badge{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:5px;
+}
+.badge-icon{
+  width:44px;height:44px;
+  border:1.5px solid var(--border);
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:18px;
+}
+.badge-label{
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--muted);
+  text-align:center;
+  line-height:1.3;
+  max-width:60px;
+}
+
+/* FOOTER */
+footer{
+  background:var(--black);
+  padding:16px 24px;
+  text-align:center;
+}
+.footer-links{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+  margin-bottom:8px;
+}
+.footer-links a{
+  font-size:11px;
+  color:#555;
+  text-decoration:none;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+}
+.footer-links a:hover{color:#888}
+.footer-disc{
+  font-size:10px;
+  color:#333;
+  max-width:580px;
+  margin:0 auto;
+  line-height:1.8;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(20px)}
+  to{opacity:1;transform:translateY(0)}
+}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.2}}
+@keyframes glowPulse{
+  0%,100%{box-shadow:0 8px 32px rgba(204,26,26,0.35)}
+  50%{box-shadow:0 8px 48px rgba(204,26,26,0.6)}
+}
+@keyframes shimmer{0%{left:-100%}100%{left:200%}}
+
+@media(max-width:480px){
+  .main{padding:36px 20px 32px}
+  .product-img{width:260px}
+  .badges{gap:14px}
+  .badge-icon{width:38px;height:38px;font-size:15px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="nav-logo">Citrus<span>Burn</span>™</div>
+</div>
+
+<!-- MAIN -->
+<main class="main">
+
+  <div class="stars">★★★★★</div>
+
+  <h1 class="headline">
+    You Just Heard Her Story.<br>
+    <em>Now It's Your Turn.</em>
+  </h1>
+
+  <p class="subline">Join 340,000+ women who finally turned their fat-burning back on.</p>
+
+  <!-- PRODUCT -->
+  <div class="product-wrap">
+    <img
+      class="product-img"
+      src="https://cristopherfdo.github.io/citrus/6_bottle.png"
+      alt="CitrusBurn 6 bottle pack"
+    >
+    <div class="badge-bestseller">Top No.1</div>
+  </div>
+
+  <!-- DISCOUNT -->
+  <div class="discount-badge">
+    <span class="discount-dot"></span>
+    Flash Sale Active — 55% Off Today Only
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-wrap">
+    <a
+      class="cta-btn"
+      href="https://hop.clickbank.net/?affiliate=criscorr34&vendor=citrusburn"
+      target="_blank"
+      onclick="fbq('track','InitiateCheckout');">
+      Claim My Discount Now →
+    </a>
+    <div class="cta-sub">🔒 Secure checkout · 180-Day Money-Back Guarantee · No subscription</div>
+  </div>
+
+  <!-- TRUST BADGES -->
+  <div class="badges">
+    <div class="badge">
+      <div class="badge-icon">🏭</div>
+      <div class="badge-label">GMP Certified</div>
+    </div>
+    <div class="badge">
+      <div class="badge-icon">🇺🇸</div>
+      <div class="badge-label">Made in USA</div>
+    </div>
+    <div class="badge">
+      <div class="badge-icon">🌿</div>
+      <div class="badge-label">100% Natural</div>
+    </div>
+    <div class="badge">
+      <div class="badge-icon">✓</div>
+      <div class="badge-label">FDA Registered</div>
+    </div>
+    <div class="badge">
+      <div class="badge-icon">🚫</div>
+      <div class="badge-label">GMO Free</div>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-links">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms</a>
+    <a href="#">Refunds</a>
+    <a href="#">Contact</a>
+  </div>
+  <div class="footer-disc">
+    These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Individual results will vary.
+  </div>
+</footer>
+
+</body>
+</html>
