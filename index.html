@@ -469,9 +469,9 @@ footer{background:var(--dark);padding:36px 24px;text-align:center;font-size:11px
 footer a{color:rgba(255,255,255,.38);text-decoration:none}
 
 /* ── STICKY MOBILE ── */
-.sticky{position:fixed;bottom:0;left:0;right:0;background:var(--or);padding:14px 20px;text-align:center;z-index:9999;display:none;box-shadow:0 -4px 24px rgba(0,0,0,.35)}
-.sticky a{color:#fff;font-weight:700;font-size:.97rem;text-decoration:none}
-@media(max-width:640px){.sticky{display:block}body{padding-bottom:58px}}
+
+
+
 
 @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
 .hero-inner{animation:fadeUp .7s ease both}
@@ -890,9 +890,9 @@ footer{background:var(--dark);padding:34px 24px;text-align:center;font-size:11px
 footer a{color:rgba(255,255,255,.33);text-decoration:none}
 
 /* ── STICKY MOBILE ── */
-.sticky{position:fixed;bottom:0;left:0;right:0;background:var(--or);padding:13px 20px;text-align:center;z-index:9999;display:none;box-shadow:0 -3px 20px rgba(0,0,0,.3)}
-.sticky a{color:#fff;font-weight:700;font-size:.97rem;text-decoration:none}
-@media(max-width:640px){.sticky{display:block}body{padding-bottom:56px}}
+
+
+
 
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 .hero-inner{animation:fadeUp .7s ease both}
@@ -1120,54 +1120,8 @@ footer a{color:rgba(255,255,255,.33);text-decoration:none}
 <div class="sec"><div class="si">
   <div class="guar-box">
 
-    <!-- GOLD SEAL SVG -->
-    <svg width="140" height="140" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:0 auto 20px">
-      <defs>
-        <radialGradient id="goldGrad" cx="40%" cy="35%" r="65%">
-          <stop offset="0%" stop-color="#FFF0A0"/>
-          <stop offset="40%" stop-color="#F5C518"/>
-          <stop offset="100%" stop-color="#B8860B"/>
-        </radialGradient>
-        <radialGradient id="innerGrad" cx="40%" cy="35%" r="65%">
-          <stop offset="0%" stop-color="#FFF5B0"/>
-          <stop offset="50%" stop-color="#E8A800"/>
-          <stop offset="100%" stop-color="#996600"/>
-        </radialGradient>
-        <filter id="glow">
-          <feGaussianBlur stdDeviation="2.5" result="blur"/>
-          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-        </filter>
-      </defs>
-
-      <!-- OUTER STARBURST -->
-      <g transform="translate(70,70)">
-        <!-- 16-point star shape -->
-        <path d="M0,-62 L7,-48 L20,-56 L16,-42 L30,-38 L22,-26 L36,-18 L24,-10 L34,2 L20,6 L24,20 L10,20 L8,34 L-4,30 L-8,44 L-18,36 L-26,48 L-32,38 L-44,46 L-46,34 L-60,38 L-58,24 L-70,22 L-64,10 L-74,-2 L-62,-8 L-68,-22 L-54,-24 L-56,-38 L-42,-36 L-40,-50 L-26,-44 L-20,-58 L-8,-48 Z"
-          fill="url(#goldGrad)" filter="url(#glow)"/>
-
-        <!-- INNER CIRCLE background -->
-        <circle r="44" fill="url(#innerGrad)" stroke="#B8860B" stroke-width="1.5"/>
-        <circle r="40" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
-
-        <!-- 100% text -->
-        <text y="-10" text-anchor="middle" font-family="Georgia,serif" font-size="20" font-weight="900" fill="#fff" filter="url(#glow)">100%</text>
-
-        <!-- MONEY BACK text -->
-        <text y="6" text-anchor="middle" font-family="Georgia,serif" font-size="9" font-weight="700" fill="#fff" letter-spacing="1">MONEY BACK</text>
-
-        <!-- Red ribbon banner -->
-        <rect x="-42" y="14" width="84" height="18" rx="2" fill="#CC1111"/>
-        <polygon points="-42,14 -50,23 -42,32" fill="#990000"/>
-        <polygon points="42,14 50,23 42,32" fill="#990000"/>
-        <text y="27" text-anchor="middle" font-family="Georgia,serif" font-size="9" font-weight="900" fill="#FFE566" letter-spacing="2">GUARANTEED</text>
-
-        <!-- GUARANTEED circular text top -->
-        <path id="topArc" d="M-32,-38 A40,40 0 0,1 32,-38" fill="none"/>
-        <text font-family="Georgia,serif" font-size="7" font-weight="700" fill="#FFF0A0" letter-spacing="2.5">
-          <textPath href="#topArc">GUARANTEED · GUARANTEED</textPath>
-        </text>
-      </g>
-    </svg>
+    <!-- GOLD SEAL — official image -->
+    <img src="https://citrus-burnn.us/assets/images/satisfaction-guaranteed.png" alt="100% Money Back Guaranteed" width="150" height="150" style="display:block;margin:0 auto 24px;filter:drop-shadow(0 4px 16px rgba(0,0,0,.2))"/>
 
     <h3>180-Day Money-Back Guarantee</h3>
     <p>Try CitrusBurn for up to 180 days — completely risk-free. If you don't see results for any reason, contact their team for a full refund. No questions. No hoops. <strong>You really have nothing to lose.</strong></p>
@@ -1221,10 +1175,6 @@ footer a{color:rgba(255,255,255,.33);text-decoration:none}
   <br/>
   <p>© 2025 CitrusBurnSales.com · All rights reserved.</p>
 </footer>
-
-<div class="sticky">
-  <a href="https://hop.clickbank.net/?affiliate=criscorr34&vendor=citrusburn" target="_blank" rel="noopener">👉 Claim My Discount — 180-Day Guarantee</a>
-</div>
 
 </body>
 </html>
