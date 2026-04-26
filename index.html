@@ -847,12 +847,32 @@ h2.light em{font-style:italic;color:var(--or2)}
 .t-loc{font-size:10px;color:rgba(255,255,255,.35)}
 
 /* ── GUARANTEE ── */
-.guar-bg{background:var(--cream);padding:48px 24px}
-.guar-box{border:2px solid rgba(232,85,10,.2);border-radius:22px;padding:40px 32px;text-align:center;background:#fff;max-width:620px;margin:0 auto;box-shadow:0 4px 24px rgba(232,85,10,.07)}
+.guar-bg{background:var(--warm);padding:72px 24px;text-align:center}
+.guar-box{
+  border:2px solid rgba(232,85,10,.25);
+  border-radius:22px;padding:44px 36px;
+  text-align:center;background:#fff;
+  max-width:640px;margin:0 auto;
+  box-shadow:0 8px 40px rgba(232,85,10,.1)
+}
 .guar-icon{font-size:2.8rem;margin-bottom:16px;display:block}
-.guar-box h3{font-family:'Lora',serif;font-size:1.6rem;font-weight:700;color:var(--dark);margin-bottom:12px}
-.guar-box p{font-size:.97rem;color:var(--muted);line-height:1.76;max-width:480px;margin:0 auto}
-.guar-box p strong{color:var(--or)}
+.guar-box h3{
+  font-family:'Lora',serif;
+  font-size:clamp(1.5rem,4vw,2rem);
+  font-weight:700;color:var(--dark);
+  margin-bottom:14px;text-transform:uppercase;
+  letter-spacing:-.01em
+}
+.guar-box p{font-size:1rem;color:var(--muted);line-height:1.8;max-width:500px;margin:0 auto 20px}
+.guar-box p strong{color:var(--or);font-weight:700}
+.guar-badges{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:20px}
+.guar-badge{
+  display:inline-flex;align-items:center;gap:7px;
+  background:var(--or-pale);border:1px solid rgba(232,85,10,.2);
+  border-radius:100px;padding:8px 18px;
+  font-size:12px;font-weight:600;color:var(--mid)
+}
+.guar-badge span{color:var(--or);font-weight:700}
 
 /* ── FINAL CTA ── */
 .final-bg{
@@ -1125,6 +1145,12 @@ footer a{color:rgba(255,255,255,.33);text-decoration:none}
 
     <h3>180-Day Money-Back Guarantee</h3>
     <p>Try CitrusBurn for up to 180 days — completely risk-free. If you don't see results for any reason, contact their team for a full refund. No questions. No hoops. <strong>You really have nothing to lose.</strong></p>
+    <div class="guar-badges">
+      <div class="guar-badge"><span>✓</span> No Questions Asked</div>
+      <div class="guar-badge"><span>✓</span> Full Refund</div>
+      <div class="guar-badge"><span>✓</span> 6 Full Months</div>
+      <div class="guar-badge"><span>✓</span> Zero Risk</div>
+    </div>
   </div>
 </div></div>
 </div>
